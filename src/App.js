@@ -19,19 +19,6 @@ import Mainfooter from "./components/Mainfooter";
 function App() {
   return (
       <div>
-          <Mainnav />
-          <Secnav />
-          <Highlight />
-          <Editorschoice />
-          <Cta />
-          <Latest />
-          <Trending />
-          <Social />
-          <Spotlight />
-          <Webdev />
-          <Newsletter />
-          <Aboutfooter />
-          <Mainfooter />
 
       </div>
   );
