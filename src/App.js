@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./sass/main.scss";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 
-import MainNav from "./components/MainNav";
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div>
-      <MainNav />;
+      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </div>
   );
 }

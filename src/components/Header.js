@@ -6,7 +6,7 @@ import {
   FaVimeoV,
   FaRegUserCircle,
 } from "react-icons/fa";
-export default function Mainnav() {
+export default function Header() {
   return (
     <header className="mainNav">
       <div className="iconsWrapper">
