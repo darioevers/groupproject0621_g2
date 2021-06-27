@@ -3,6 +3,7 @@ import "./sass/main.scss";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Highlight from "./components/Highlight";
+import Editorschoice from "./components/Editorschoice";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,6 +12,7 @@ function App() {
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Highlight />
+      <Editorschoice />
     </div>
   );
 }
