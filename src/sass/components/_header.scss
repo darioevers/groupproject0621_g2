@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.1s ease;
 }
 
 .mainNav {
@@ -33,6 +34,9 @@
             padding: 10px;
             border-radius: 50%;
             color: #d8d8d8;
+            &:hover {
+              color: #c97803;
+            }
           }
         }
       }
@@ -56,6 +60,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
     button {
       background: transparent;
       position: relative;
@@ -66,6 +71,9 @@
       width: 120px;
       height: 35px;
       font-weight: 700;
+      &:hover {
+        color: #c97803;
+      }
     }
     .loginLink {
       display: flex;
@@ -75,7 +83,9 @@
       text-decoration: none;
       position: relative;
       right: 0;
-
+      &:hover {
+        color: #c97803;
+      }
       svg {
         font-size: 30px;
         background-color: #1d1d1d;
@@ -85,6 +95,9 @@
         margin-right: 3px;
         position: relative;
         right: 0;
+        &:hover {
+          color: #c97803;
+        }
       }
     }
   }
