@@ -14,7 +14,7 @@ function latest2() {
         <div className="latest-articles-container">
           <div className="latest-article">
             <div className="latest-article-img">
-              <img src="http://www.human2human.consulting/wp-content/uploads/2017/08/Some-Council-Staff-are-blocking-technology.png"></img>
+              <img src="https://media3.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif"></img>
             </div>
             <div className="latest-article-text">
               {" "}
@@ -62,7 +62,7 @@ function latest2() {
           </div>
           <div className="latest-article">
             <div className="latest-article-img">
-              <img src="http://cdn.mos.cms.futurecdn.net/8bEfxy8skS6fUVZnfaLWxj.jpg"></img>
+              <img src="https://i.gifer.com/NKQ9.gif"></img>
             </div>
             <div className="latest-article-text">
               {" "}
