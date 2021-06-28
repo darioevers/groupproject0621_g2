@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Lastest from "./components/Latest";
 import { Store, storContext } from "./context";
+import Highlight from "./components/Highlight";
+import Editorschoice from "./components/Editorschoice";
 
 function App() {
   const store = useContext(Store);
@@ -11,8 +13,12 @@ function App() {
   return (
     <storContext.Provider value={store}>
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Lastest />
+
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+
+      <Highlight />
+      <Editorschoice />
+      <Lastest />
     </storContext.Provider>
   );
 }
