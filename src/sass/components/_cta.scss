@@ -1,5 +1,5 @@
 .cta {
-  height: 200px;
+  height: 250px;
   width: 100%;
 
   display: flex;
@@ -19,30 +19,34 @@
     .cta-banner {
       background-color: black;
       width: 98%;
-      margin-left: 70px;
+      margin-left: 80px;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       .cta-banner-smaller-text {
+        position: relative;
         h4 {
+          position: relative;
+          top: 30px;
           color: #6b6b6b;
-          /* padding-bottom: 10px; */
         }
       }
       .cta-banner-heading {
+        position: relative;
         h2 {
           color: white;
-          /*  margin-top: 20px; */
+          position: relative;
+          top: 10px;
           font-size: 35px;
         }
       }
       .cta-btn {
         button {
           /* margin-top: 15px; */
-          width: 120px;
-          height: 40px;
+          width: 150px;
+          height: 50px;
           border-radius: 15px;
-          font-size: 20px;
+          font-size: 25px;
         }
       }
     }
