@@ -1,0 +1,54 @@
+.cta {
+  height: 250px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  .cta-wrapper {
+    background-color: rgb(0, 0, 0);
+    width: 90%;
+    height: 100%;
+    display: flex;
+
+    .side-color {
+      width: 2%;
+      height: 100%;
+      background-color: #57bf05;
+    }
+    .cta-banner {
+      background-color: black;
+      width: 98%;
+      margin-left: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .cta-banner-smaller-text {
+        position: relative;
+        h4 {
+          position: relative;
+          top: 30px;
+          color: #6b6b6b;
+        }
+      }
+      .cta-banner-heading {
+        position: relative;
+        h2 {
+          color: white;
+          position: relative;
+          top: 10px;
+          font-size: 35px;
+        }
+      }
+      .cta-btn {
+        button {
+          /* margin-top: 15px; */
+          width: 150px;
+          height: 50px;
+          border-radius: 15px;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
