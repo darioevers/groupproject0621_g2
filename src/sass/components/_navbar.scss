@@ -1,0 +1,22 @@
+.menu {
+  height: 45px;
+  width: 100%;
+  border-top: 1px solid #898989;
+  border-bottom: 1px solid #898989;
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3f3f3f;
+    height: 100%;
+    list-style: none;
+
+    li {
+      font-size: 18px;
+      margin: 0 20px;
+      color: #a2a2a2;
+      letter-spacing: 2px;
+      cursor: pointer;
+    }
+  }
+}
