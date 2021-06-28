@@ -21,5 +21,3 @@ function App() {
     </storContext.Provider>
   );
 }
-
-export default App;
