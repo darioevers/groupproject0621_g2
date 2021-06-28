@@ -12,6 +12,7 @@ import latest from "./components/Latest2";
 
 function App() {
   const store = useContext(Store);
+ 
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <storContext.Provider value={store}>
