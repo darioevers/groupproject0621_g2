@@ -9,6 +9,7 @@ import Editorschoice from "./components/Editorschoice";
 
 function App() {
   const store = useContext(Store);
+ 
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <storContext.Provider value={store}>

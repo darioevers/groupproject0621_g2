@@ -1,6 +1,11 @@
 import React from "react";
 
+
+
 function Highlight() {
+  
+
+  
   return (
     <div className="highlight">
       <div className="highlight-left">
@@ -13,7 +18,7 @@ function Highlight() {
             <h2>Heading lorem ipsum 123 khfkjsdlf lorem ipsum 123 dsahi</h2>
           </div>
           <div>
-            <span>AUTHOR</span> <span> / </span>
+            <span>Author</span> <span> / </span>
             <span>DATE</span>
           </div>
         </div>
