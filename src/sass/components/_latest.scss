@@ -1,5 +1,18 @@
-.news-box {
-  width: 50vw;
-
-  /* border: 2px red dashed; */
+.latest-trending-social {
+  width: 100%;
+  height: 1000px;
+  background-color: yellow;
+  display: flex;
+  .latest-in-tech {
+    width: 66%;
+    background-color: yellowgreen;
+    height: 100%;
+  }
+  .trending-social {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+    height: 100%;
+    background-color: plum;
+  }
 }
