@@ -61,45 +61,6 @@ function Editorschoice() {
         </div>
       </div>
     </div>
-
-    /*  <div className="editor-images">
-        <div className="editor-img-container">
-          <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/01/A2797-10-must-have-gadgets-for-every-architect.jpg"></img>
-          <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/01/A2797-10-must-have-gadgets-for-every-architect.jpg"></img>
-          <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/01/A2797-10-must-have-gadgets-for-every-architect.jpg"></img>
-          <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/01/A2797-10-must-have-gadgets-for-every-architect.jpg"></img>
-        </div>
-      </div>
-      <div className="editor-text">
-        <div className="editor-item-heading">
-          <h3>Heading: This is heading</h3>
-        </div>
-        <div className="author-date">
-          <span>AUTHOR</span> <span> / </span>
-          <span>DATE</span>
-          <div className="editor-item-heading">
-            <h3>Heading: This is heading</h3>
-          </div>
-          <div className="author-date">
-            <span>AUTHOR</span> <span> / </span>
-            <span>DATE</span>
-          </div>
-          <div className="editor-item-heading">
-            <h3>Heading: This is heading</h3>
-          </div>
-          <div className="author-date">
-            <span>AUTHOR</span> <span> / </span>
-            <span>DATE</span>
-          </div>
-          <div className="editor-item-heading">
-            <h3>Heading: This is heading</h3>
-          </div>
-          <div className="author-date">
-            <span>AUTHOR</span> <span> / </span>
-            <span>DATE</span>
-          </div>
-        </div>
-      </div> */
   );
 }
 

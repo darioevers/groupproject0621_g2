@@ -11,9 +11,6 @@ const Lastest = () => {
       <h5>{item.author}</h5>
       <h6>{item.publishedAt} </h6>
       <img src={item.urlToImage} />
-      <a href={item.url} target="_blank">
-        <button>Show more</button>
-      </a>
     </li>
   ));
   return (
