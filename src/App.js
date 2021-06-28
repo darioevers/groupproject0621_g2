@@ -26,6 +26,7 @@ function App() {
       <Cta />
       <Latest2 />
       {/*  <Lastest /> */}
+
     </storContext.Provider>
   );
 }
