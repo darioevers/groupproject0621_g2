@@ -1,6 +1,7 @@
 import React from "react";
 import { Store } from "../context";
 // import { Carousel } from "react-responsive-carousel";
+
 function Highlight() {
   console.log(Store.dataNew);
   Store.fetchData();
