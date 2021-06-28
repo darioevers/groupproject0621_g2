@@ -60,5 +60,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/darioevers/groupproject0621_g2/issues"
-  }
+  },
+  "devDependencies": {}
 }
