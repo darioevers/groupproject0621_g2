@@ -60,17 +60,21 @@
           }
         }
         .latest-article-text {
-          /* background-color: blueviolet; */
+          /* background-color: rgb(219, 186, 250); */
           padding-left: 30px;
           .latest-article-heading {
+            padding-top: 25px;
             h2 {
             }
           }
           .author-date {
+            margin-top: 20px;
             span {
+              font-size: 13px;
             }
           }
           .latest-article-desc {
+            padding-top: 10px;
             p {
             }
           }
