@@ -15,9 +15,10 @@ function App() {
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Lastest />
+
       <Highlight />
       <Editorschoice />
+      <Lastest />
     </storContext.Provider>
   );
 }
