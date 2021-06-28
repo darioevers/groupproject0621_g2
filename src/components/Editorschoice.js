@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { alignPropType } from "react-bootstrap/esm/DropdownMenu";
+// import { alignPropType } from "react-bootstrap/esm/DropdownMenu";
 
 import { Store } from "../context";
 
@@ -45,7 +45,7 @@ publishedAt,
           </li>
   )});
   return (
-   <ul>
+     <ul>
      {authorInfo}
    </ul> 
   )
