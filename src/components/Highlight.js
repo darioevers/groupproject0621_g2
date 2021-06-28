@@ -1,6 +1,6 @@
 import React from "react";
 import { Store } from "../context";
-import { Carousel } from "react-responsive-carousel";
+
 function Highlight() {
   console.log(Store.dataNew);
   Store.fetchData();
@@ -11,12 +11,12 @@ function Highlight() {
         <li key={i}>
           <div className="highlight-left">
             <div className="highlight-left-img">
-              <a href={item.url} target="_blank">
+              <a href={process.env.PUBLIC_URL / item.url} target="_blank">
                 <img className="img-res" src={item.urlToImage} />
               </a>
             </div>
             <div className="highlight-left-text">
-              <h4>CATEGORY</h4>
+              <h4>TECHNOLOGIES</h4>
               <div>
                 <h3>{item.title}</h3>
               </div>
@@ -30,7 +30,7 @@ function Highlight() {
       );
     }
   });
-  return <div className="highlight"> {highlight}</div>;
+  return <ul className="highlight">{highlight}</ul>;
 }
 
 export default Highlight;
