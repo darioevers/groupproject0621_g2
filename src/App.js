@@ -8,7 +8,6 @@ import { Store, storContext } from "./context";
 import Highlight from "./components/Highlight";
 import Editorschoice from "./components/Editorschoice";
 import Cta from "./components/Cta";
-import latest from "./components/Latest2";
 
 function App() {
   const store = useContext(Store);
@@ -26,7 +25,6 @@ function App() {
       <Cta />
       <Latest2 />
       {/*  <Lastest /> */}
-
     </storContext.Provider>
   );
 }
