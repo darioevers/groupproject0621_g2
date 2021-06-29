@@ -10,10 +10,11 @@ import Editorschoice from "./components/Editorschoice";
 import Cta from "./components/Cta";
 import Aboutfooter from "./components/Aboutfooter";
 import Mainfooter from "./components/Mainfooter";
+import Spotlight from "./components/Spotlight";
 
 function App() {
   const store = useContext(Store);
- 
+
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <storContext.Provider value={store}>
@@ -27,6 +28,7 @@ function App() {
 
       <Cta />
       <Latest2 />
+      <Spotlight />
       {/*  <Lastest /> */}
       <Aboutfooter />
       <Mainfooter />
