@@ -11,6 +11,7 @@ import Cta from "./components/Cta";
 
 function App() {
   const store = useContext(Store);
+ 
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <storContext.Provider value={store}>
