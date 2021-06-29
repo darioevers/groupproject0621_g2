@@ -7,15 +7,14 @@ import { Store, StoreContext } from "./context";
 import Highlight from "./components/Highlight";
 import Editorschoice from "./components/Editorschoice";
 import Cta from "./components/Cta";
-// import Latest from "./components/Latest";
+import Latest from "./components/Latest";
 
 import Aboutfooter from "./components/Aboutfooter";
 import Mainfooter from "./components/Mainfooter";
 import Spotlight from "./components/Spotlight";
 function App() {
-  // const store = useContext(StoreContext);
-  const contextObj = useContext(StoreContext);
   const [store, setStore] = useState(Store);
+  const contextObj = useContext(StoreContext);
   const [menuOpen, setMenuOpen] = useState(false);
   console.log(contextObj.dataNew);
   useEffect(() => {
@@ -32,7 +31,7 @@ function App() {
       <Cta />
       <Latest2 />
       <Spotlight />
-      {/* <Latest /> */}
+      <Latest />
 
       <Aboutfooter />
       <Mainfooter />
