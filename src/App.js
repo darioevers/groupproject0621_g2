@@ -8,6 +8,8 @@ import { Store, storContext } from "./context";
 import Highlight from "./components/Highlight";
 import Editorschoice from "./components/Editorschoice";
 import Cta from "./components/Cta";
+import Aboutfooter from "./components/Aboutfooter";
+import Mainfooter from "./components/Mainfooter";
 import Spotlight from "./components/Spotlight";
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
       <Latest2 />
       <Spotlight />
       {/*  <Lastest /> */}
+      <Aboutfooter />
+      <Mainfooter />
     </storContext.Provider>
   );
 }
