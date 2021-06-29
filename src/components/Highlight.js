@@ -3,9 +3,12 @@ import { StoreContext } from "../context";
 
 function Highlight() {
   const contextObj = useContext(StoreContext);
-  console.log(contextObj.store.dataNew);
+  //console.log(contextObj.store.dataNew);
   const items = contextObj.store.dataNew.map((item, i) => {
-    if (i < 1) {
+    if (i < 3) {
+      // if (i == 0) {
+      //   className = "highlight-left";
+      // }
       return (
         <div className="highlight">
           <div key={i} className="highlight-left">
@@ -22,44 +25,6 @@ function Highlight() {
                 <h3>{item.title}</h3>
               </div>
               <div className="author-date-left">
-                <span>{item.author} </span> <span> / </span>
-                <span>{item.publishedAt} </span>
-              </div>
-            </div>
-          </div>
-
-          <div key={i} className="highlight-middle">
-            <div className="highlight-middle-img">
-              {
-                <a href={item.url} target="_blank">
-                  <img src={item.urlToImage} />
-                </a>
-              }
-            </div>
-            <div className="highlight-middle-text">
-              <h4>CATEGORY</h4>
-              <div className="highlight-heading-middle">
-                <h3>{item.title}</h3>
-              </div>
-              <div className="author-date-middle">
-                <span>{item.author} </span> <span> / </span>
-                <span>{item.publishedAt} </span>
-              </div>
-            </div>
-          </div>
-
-          <div key={i} className="highlight-right">
-            <div className="highlight-right-img">
-              <a href={item.url} target="_blank">
-                <img src={item.urlToImage} />
-              </a>
-            </div>
-            <div className="highlight-right-text">
-              <h4>CATEGORY</h4>
-              <div className="highlight-heading-right">
-                <h3>{item.title}</h3>
-              </div>
-              <div className="author-date-right">
                 <span>{item.author} </span> <span> / </span>
                 <span>{item.publishedAt} </span>
               </div>
