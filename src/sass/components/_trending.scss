@@ -1,11 +1,12 @@
 .trending {
-  height: 60%;
+  height: 70%;
   width: 85%;
-  /*  border: 5px solid rgb(72, 255, 0); */
+  /* border: 5px solid rgb(72, 255, 0); */
   /*  background-color: hotpink; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
   .trending-heading {
     position: relative;
     height: 120px;
