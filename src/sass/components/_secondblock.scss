@@ -1,0 +1,93 @@
+.moreintech-quick-subscribe {
+    width: 100%;
+    height: 1000px;
+    /*  background-color: yellow; */
+    display: flex;
+    .moreintech-in-tech {
+      width: 66%;
+      /*    background-color: yellowgreen; */
+      height: 100%;
+      position: relative;
+      .moreintech-heading {
+        height: 125px;
+        width: 85%;
+        margin: 0 auto;
+  
+        /* background-color: hotpink; */
+        position: relative;
+        border-bottom: 1px solid #c0c0c0;
+        h2 {
+          position: relative;
+          top: 70px;
+          /* left: 100px; */
+  
+          span {
+            color: #43d001;
+            font-weight: bolder;
+            font-size: 25px;
+          }
+        }
+      }
+      .moreintech-articles-container {
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 800px;
+        width: 85%;
+        position: relative;
+        top: 20px;
+        left: 96px;
+        .moreintech-article {
+          height: 22%;
+          width: 100%;
+          /* border: 1px solid red; */
+          display: flex;
+          flex-direction: row;
+  
+          .moreintech-article-img {
+            min-width: 30%;
+            max-width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+              flex-shrink: 0;
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .moreintech-article-text {
+            /* background-color: rgb(219, 186, 250); */
+            padding-left: 30px;
+            .moreintech-article-heading {
+              padding-top: 25px;
+              h2 {
+              }
+            }
+            .author-date {
+              margin-top: 20px;
+              span {
+                font-size: 13px;
+              }
+            }
+            .moreintech-article-desc {
+              padding-top: 10px;
+              p {
+              }
+            }
+          }
+        }
+      }
+    }
+    .quicknews-newsletter {
+      display: flex;
+      flex-direction: column;
+      width: 34%;
+      height: 100%;
+      /*  background-color: plum; */
+    }
+  }
+  
