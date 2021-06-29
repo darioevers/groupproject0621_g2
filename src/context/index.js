@@ -11,6 +11,7 @@ const Store = {
         data.articles.map((item) => Store.dataNew.push(item));
       });
   },
+  print: () => console.log(Store.fetchData),
 };
-const storContext = React.createContext(Store);
-export { Store, storContext };
+const storeContext = React.createContext(Store);
+export { Store, storeContext };
