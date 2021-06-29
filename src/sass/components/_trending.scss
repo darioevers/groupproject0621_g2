@@ -34,11 +34,12 @@
     flex-direction: column;
     justify-content: space-evenly;
     .trending-article-img {
-      height: 60%;
+      min-height: 60%;
       /*   border: 5px solid black; */
       position: relative;
+      min-width: 100%;
       a {
-        width: 100%;
+        min-width: 100%;
         position: relative;
         top: 10px;
         height: 80%;
