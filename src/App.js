@@ -15,7 +15,7 @@ import Spotlight from "./components/Spotlight";
 
 function App() {
   const store = useContext(Store);
- 
+
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <storContext.Provider value={store}>
@@ -29,6 +29,7 @@ function App() {
 
       <Cta />
       <Latest2 />
+      <Spotlight />
       {/*  <Lastest /> */}
       <Spotlight />
       <Secondblock />
