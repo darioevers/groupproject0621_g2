@@ -7,12 +7,15 @@ import { Store, storContext } from "./context";
 import Highlight from "./components/Highlight";
 import Editorschoice from "./components/Editorschoice";
 
+
+
 function App() {
   const store = useContext(Store);
  
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <storContext.Provider value={store}>
+      
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
