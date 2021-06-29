@@ -55,7 +55,7 @@ function Editorschoice() {
             </div>
             <div className="author-date">
               <span>AUTHOR</span> <span> / </span>
-              <span>DATE</span>{" "}
+              <span>DATE</span>
             </div>
           </div>
         </div>

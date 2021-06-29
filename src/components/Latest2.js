@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Social from "./Social";
 import Trending from "./Trending";
-import { Store } from "../context";
-function latest2() {
-  const latest = Store.dataNew.map((item, i) => {
+import { StoreContext } from "../context";
+function Latest2() {
+  const contextObj = useContext(StoreContext);
+  const latest = contextObj.store.dataNew.map((item, i) => {
     if (i > 3 && i < 8) {
       return (
         <li key={i}>
@@ -52,4 +53,4 @@ function latest2() {
   );
 }
 
-export default latest2;
+export default Latest2;
