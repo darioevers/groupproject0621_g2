@@ -8,10 +8,11 @@ import { Store, storContext } from "./context";
 import Highlight from "./components/Highlight";
 import Editorschoice from "./components/Editorschoice";
 import Cta from "./components/Cta";
+import Spotlight from "./components/Spotlight";
 
 function App() {
   const store = useContext(Store);
- 
+
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <storContext.Provider value={store}>
@@ -25,6 +26,7 @@ function App() {
 
       <Cta />
       <Latest2 />
+      <Spotlight />
       {/*  <Lastest /> */}
     </storContext.Provider>
   );

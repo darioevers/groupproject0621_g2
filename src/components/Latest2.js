@@ -109,8 +109,10 @@ function latest2() {
           </div>
         </div>
       </div>
+      <div className="divider"></div>
       <div className="trending-social">
         <Trending />
+
         <Social />
       </div>
     </div>
