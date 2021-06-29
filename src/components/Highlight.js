@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { storeContext } from "../context";
+import { StoreContext } from "../context";
 
 function Highlight() {
-  const contextObj = useContext(storeContext);
-  console.log(contextObj);
+  const contextObj = useContext(StoreContext);
+  console.log(contextObj.store.dataNew);
   const items = contextObj.store.dataNew.map((item, i) => {
     if (i < 1) {
       return (

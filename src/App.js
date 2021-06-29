@@ -5,11 +5,11 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Latest2 from "./components/Latest2";
 import Lastest from "./components/Latest";
-import { Store, storeContext } from "./context";
+import { Store, StoreContext } from "./context";
 import Highlight from "./components/Highlight";
 import Editorschoice from "./components/Editorschoice";
 import Cta from "./components/Cta";
-import latest from "./components/Latest2";
+import latest from "./components/Latest";
 
 function App() {
   // const store = useContext(Store);
@@ -17,12 +17,12 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <Router>
-      <storeContext.Provider value={{ store, setStore }}>
-        {/* <Route path={process.env.PUBLIC_URL + "/"} exact component={Header} /> */}
-        <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <StoreContext.Provider value={{ store, setStore }}>
+        {/* <Route path={process.env.PUBLIC_URL + "/"} exact component={Header} />
+        <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
         {/* <Route path={process.env.PUBLIC_URL + "/"} exact component={Navbar} /> */}
 
-        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        {/* <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
         {/* <Route path={process.env.PUBLIC_URL + "/"} exact component={Navbar} /> */}
 
         <Highlight />
@@ -30,12 +30,12 @@ function App() {
         {/* <Editorschoice /> */}
         {/* <Route path={process.env.PUBLIC_URL + "/"} exact component={Navbar} /> */}
 
-        <Cta />
+        {/* <Cta /> */}
         {/* <Route path={process.env.PUBLIC_URL + "/"} exact component={Navbar} /> */}
 
-        <Latest2 />
-        {/* <Lastest /> */}
-      </storeContext.Provider>
+        {/* <Latest2 /> */}
+        <Lastest />
+      </StoreContext.Provider>
     </Router>
   );
 }

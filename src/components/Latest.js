@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
-import { Store } from "../context";
+import { StoreContext } from "../context";
 const Lastest = () => {
-  const store = useContext(Store);
-  console.log(Store.dataNew);
-  Store.fetchData();
-  const newsList = Store.dataNew.map((item, i) => (
+  const contextObj = useContext(StoreContext);
+  // const store = useContext(Store);
+  console.log(contextObj.Store.dataNew);
+  // Store.fetchData();
+  const newsList = contextObj.Store.dataNew.map((item, i) => (
     <li key={i}>
       <h2>{item.title} </h2>
       <h3>{item.content}</h3>
