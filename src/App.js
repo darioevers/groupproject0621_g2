@@ -8,6 +8,8 @@ import { Store, storContext } from "./context";
 import Highlight from "./components/Highlight";
 import Editorschoice from "./components/Editorschoice";
 import Cta from "./components/Cta";
+import Aboutfooter from "./components/Aboutfooter";
+import Mainfooter from "./components/Mainfooter";
 
 function App() {
   const store = useContext(Store);
@@ -26,6 +28,8 @@ function App() {
       <Cta />
       <Latest2 />
       {/*  <Lastest /> */}
+      <Aboutfooter />
+      <Mainfooter />
     </storContext.Provider>
   );
 }
