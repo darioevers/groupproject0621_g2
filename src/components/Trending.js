@@ -6,7 +6,7 @@ function Trending() {
       <div className="trending-heading">
         <div className="trending-heading-wrapper">
           <h2>
-            tranding<span>//</span>
+            trending<span>//</span>
           </h2>
         </div>
       </div>

@@ -1,11 +1,12 @@
 .trending {
-  height: 60%;
+  height: 70%;
   width: 85%;
-  /*  border: 5px solid rgb(72, 255, 0); */
+  /* border: 5px solid rgb(72, 255, 0); */
   /*  background-color: hotpink; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
   .trending-heading {
     position: relative;
     height: 120px;
@@ -33,11 +34,12 @@
     flex-direction: column;
     justify-content: space-evenly;
     .trending-article-img {
-      height: 60%;
+      min-height: 60%;
       /*   border: 5px solid black; */
       position: relative;
+      min-width: 100%;
       a {
-        width: 100%;
+        min-width: 100%;
         position: relative;
         top: 10px;
         height: 80%;
