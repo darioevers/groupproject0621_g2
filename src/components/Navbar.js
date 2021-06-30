@@ -5,23 +5,33 @@ function Navbar({ menuOpen, setMenuOpen }) {
     <div className={"menu " + (menuOpen && "active")}>
       <ul>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#link1">more in tech</a>
+          <a className="link" href="#link1">
+            MORE IN TECH
+          </a>
         </li>
 
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#link2">spotlight</a>
+          <a className="link" href="#link2">
+            SPOTLIGHT
+          </a>
         </li>
 
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#link3">latest in tech</a>
+          <a className="link" href="#link3">
+            LATEST IN TECH
+          </a>
         </li>
 
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#link4">trending</a>
+          <a className="link" href="#link4">
+            TRENDING
+          </a>
         </li>
 
         <li onClick={() => setMenuOpen(false)}>
-          <a href="#link5">quick news</a>
+          <a className="link" href="#link5">
+            QUICK NEWS
+          </a>
         </li>
       </ul>
     </div>

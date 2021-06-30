@@ -10,12 +10,14 @@
     height: 100%;
     width: 100%;
     position: relative;
-    margin: 0 1px;
+    margin: 0;
+    border-left: 1px solid black;
     &:nth-child(1) {
       margin-left: 0;
     }
     &:nth-child(3) {
       margin-left: 0;
+      border-left: none;
     }
     a {
       img {
@@ -39,7 +41,7 @@
       margin: 0 auto;
 
       h4 {
-        font-size: 15px;
+        font-size: 1.5rem;
         color: #c97800;
         position: relative;
         top: 10px;
@@ -55,9 +57,11 @@
           }
           h3 {
             font-size: 2.6rem;
-            line-height: 32px;
+            line-height: 3rem;
             color: white;
             letter-spacing: 1px;
+            overflow: hidden;
+            width: 95%;
           }
         }
       }
