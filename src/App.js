@@ -1,4 +1,6 @@
 import React, { useState, useContext } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import "./sass/main.scss";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -15,10 +17,14 @@ import Spotlight from "./components/Spotlight";
 function App() {
   const store = useContext(Store);
   const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <storContext.Provider value={store}>
-      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+    <Router>
+      <Route path="./header" exact component={Header} />
+      <Route path="./navbar" exact component ={()=><
+        Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/> }/>
+      
       <Highlight />
       <Editorschoice />
       <Cta />
@@ -28,7 +34,9 @@ function App() {
       <Spotlight />
       <Secondblock />
       <Aboutfooter />
-      <Mainfooter />
+      <Route path="./mainfooter" exact component ={()=><
+        Mainfooter menuOpen={menuOpen} setMenuOpen={setMenuOpen}  /> }/>
+      </Router> 
     </storContext.Provider>
   );
 }

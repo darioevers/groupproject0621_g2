@@ -1,9 +1,12 @@
+import { Router } from "@material-ui/icons";
 import React from "react";
+
 import Social from "./Social";
 import Trending from "./Trending";
 
 function latest2() {
   return (
+    <Router>
     <div className="latest-trending-social">
       <div className="latest-in-tech">
         <div className="latest-heading">
@@ -113,9 +116,10 @@ function latest2() {
       <div className="trending-social">
         <Trending />
 
-        <Social />
+        <Route path="./latest2/social" exact component={Social}    />
       </div>
     </div>
+    </Router>
   );
 }
 

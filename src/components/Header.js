@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import {
   FaFacebook,
   FaTwitter,
@@ -12,24 +14,24 @@ export default function Header() {
       <div className="iconsWrapper">
         <ul className="iconsList">
           <li className="listItem">
-            <a href="#">
+            <Link to="#" target="blank">
               <FaFacebook />
-            </a>
+            </Link>
           </li>
           <li className="listItem">
-            <a href="#">
+            <Link to="#" target="blank">
               <FaTwitter />
-            </a>
+            </Link>
           </li>
           <li className="listItem">
-            <a href="#">
+            <Link to="#" target="blank">
               <FaInstagram />
-            </a>
+            </Link>
           </li>
           <li className="listItem">
-            <a href="#">
+            <Link to="#" target="blank">
               <FaVimeoV />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
