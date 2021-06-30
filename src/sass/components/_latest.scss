@@ -142,3 +142,10 @@
     /* background-color: plum; */
   }
 }
+ul .latest-article {
+  display: flex;
+  padding: 2rem;
+  .latest-article-img {
+    width: 60%;
+  }
+}
