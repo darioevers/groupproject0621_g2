@@ -5,7 +5,7 @@
 https://darioevers.github.io/GroupProject0621_g2/
 
 
-![TECHNEWS SCREENSHOT]()
+![TECHNEWS SCREENSHOT](https://raw.githubusercontent.com/darioevers/groupproject0621_g2/master/README.png?token=ASB2COKLQPWX3ZRWXJ2TPMDA4YWMA)
 
 
 
