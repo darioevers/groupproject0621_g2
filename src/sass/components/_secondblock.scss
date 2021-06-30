@@ -1,8 +1,14 @@
 .moreintech-quick-subscribe {
   width: 100%;
   height: 1000px;
-  /*  background-color: yellow; */
+  position: relative;
   display: flex;
+  @include mobile990 {
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    /* border: 3px solid red; */
+  }
   .moreintech-in-tech {
     width: 66%;
     /*    background-color: yellowgreen; */
@@ -52,6 +58,10 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          @include mobile990 {
+            min-width: 45%;
+            max-width: 45%;
+          }
           img {
             flex-shrink: 0;
             object-fit: cover;
@@ -63,9 +73,23 @@
           /* background-color: rgb(219, 186, 250); */
           padding-left: 30px;
           .moreintech-article-heading {
-            padding-top: 25px;
+            width: 95%;
+            height: 40%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            @include mobile990 {
+              /* max-height: 80px; */
+              width: 80%;
+              /* overflow: hidden; */
+            }
             h2 {
               font-size: 2rem;
+              @include mobile990 {
+                font-size: 1.9rem;
+
+                width: 80%;
+              }
             }
           }
           .author-date {
@@ -75,10 +99,21 @@
             }
           }
           .moreintech-article-desc {
+            width: 95%;
+            max-height: 40%;
+            overflow: hidden;
             padding-top: 10px;
+            @include mobile990 {
+              width: 100%;
+            }
             p {
-              font-size: 1.5rem;
-              line-height: 1.4;
+              font-size: 1.4rem;
+              line-height: 1.2;
+              @include mobile990 {
+                font-size: 1.4rem;
+                line-height: 1.2;
+                width: 100%;
+              }
             }
           }
         }
@@ -91,5 +126,8 @@
     width: 34%;
     height: 100%;
     /*  background-color: plum; */
+    @include mobile990 {
+      display: none;
+    }
   }
 }

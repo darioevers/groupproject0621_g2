@@ -1,5 +1,5 @@
 .editor-choice {
-  height: 45rem;
+  height: auto;
   width: 100%;
 
   display: flex;
@@ -9,7 +9,8 @@
     position: relative;
     left: 9.6rem;
     top: 50px;
-    height: 20%;
+    height: 100px;
+    /* background-color: blue; */
     width: 50%;
     @include mobile990 {
       left: 50px;
@@ -28,32 +29,35 @@
     }
   }
   .editor-items-container {
-    height: 80%;
+    height: 100%;
     width: 100%;
-    flex-wrap: wrap;
+    /* background-color: yellowgreen; */
     display: flex;
     justify-content: center;
     @include mobile990 {
+      height: 80%;
     }
     .editor-items {
-      height: 100%;
+      /* height: auto; */
       width: 90%;
-
+      flex-wrap: wrap;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-
+      /*  background-color: rgb(50, 78, 205); */
       @include mobile990 {
-        /*  flex-direction: column; */
+        height: 200%;
       }
       .editor-item {
-        height: 100%;
+        max-height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         max-width: 22%;
+        min-width: 350px;
         /* min-width: 250px; */
-        flex-grow: 1;
+        /* flex-grow: 1; */
+        flex-wrap: wrap;
         .editor-item-image {
           overflow: hidden;
 
