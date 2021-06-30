@@ -95,30 +95,36 @@
         }
         .editor-item-heading {
           position: relative;
-          h3 {
-            cursor: pointer;
-            font-size: 2.5rem;
-            padding-top: 10px;
-            @include mobile570 {
-              font-size: 2rem;
-              /*  background-color: chartreuse; */
-              position: relative;
-              top: 5px;
+          a {
+            text-decoration: none;
+            &:visited {
+              color: black;
             }
-            @include mobile720 {
-              position: relative;
-              top: 5px;
-            }
-            @include mobile990 {
+            h3 {
+              cursor: pointer;
               font-size: 2.5rem;
-              padding-top: 0;
-              position: relative;
-              top: 0;
-            }
-            @include mobile1200 {
-              font-size: 3rem;
-              position: relative;
-              bottom: 40px;
+              padding-top: 10px;
+              @include mobile570 {
+                font-size: 2rem;
+                /*  background-color: chartreuse; */
+                position: relative;
+                top: 5px;
+              }
+              @include mobile720 {
+                position: relative;
+                top: 5px;
+              }
+              @include mobile990 {
+                font-size: 2.5rem;
+                padding-top: 0;
+                position: relative;
+                top: 0;
+              }
+              @include mobile1200 {
+                font-size: 3rem;
+                position: relative;
+                bottom: 40px;
+              }
             }
           }
         }
