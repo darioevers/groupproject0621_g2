@@ -25,13 +25,12 @@ function App() {
     <StoreContext.Provider value={{ store, setStore }}>
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Highlight />
+      {/* <Highlight /> */}
       <Editorschoice />
       <Cta />
       <Latest2 />
       <Spotlight />
       {/*  <Lastest /> */}
-      <Spotlight />
       <Secondblock />
       <Aboutfooter />
       <Mainfooter />

@@ -1,0 +1,20 @@
+$width990: 990px;
+$width720: 720px;
+$width570: 570px;
+@mixin mobile990 {
+  @media (max-width: #{$width990}) {
+    @content;
+  }
+}
+
+@mixin mobile720 {
+  @media (max-width: #{$width720}) {
+    @content;
+  }
+}
+
+@mixin mobile570 {
+  @media (max-width: #{$width570}) {
+    @content;
+  }
+}

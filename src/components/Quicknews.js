@@ -1,47 +1,40 @@
-import React, { useContext } from "react";
-import { StoreContext } from "../context";
+import React from "react";
 
 function Quicknews() {
-  const contextObj = useContext(StoreContext);
-  console.log(contextObj.store.dataNew);
-  const items = contextObj.store.dataNew.map((item, i) => {
-    if (i > 15 && i < 17) {
-      return (
-        <div key={i} className="quicknews">
-          <div className="quicknews-heading">
-            <div className="quicknews-heading-wrapper">
-              <h2>
-                QUICK NEWS<span>//</span>
-              </h2>
-            </div>
+  return (
+    <div className="quicknews">
+      <div className="quicknews-heading">
+        <div className="quicknews-heading-wrapper">
+          <h2>
+            quick news<span>//</span>
+          </h2>
+        </div>
+      </div>
+      <div className="quicknews-article-container">
+        <div className="quicknews-article-img">
+          <a>
+            <img src="https://news.lenovo.com/wp-content/uploads/2019/11/Lenovo_TechWorld19_Beijing_A_Keynote_00636-scaled.jpg"></img>
+          </a>
+        </div>
+        <div className="quicknews-article-text">
+          <div className="quicknews-article-heading">
+            <h3>Heading: This is heading</h3>
           </div>
-          <div className="quicknews-article-container">
-            <div className="quicknews-article-img">
-              <a href={item.url} target="_blank">
-                <img src={item.urlToImage} />
-              </a>
-            </div>
-            <div className="quicknews-article-text">
-              <div className="quicknews-article-heading">
-                <h4>{item.title}</h4>
-              </div>
-              <div className="quicknews-author-date">
-                <span>{item.author}</span>
-                <span> </span>
-                <span>{item.publishedAt}</span>
-              </div>
-              <div className="quicknews-article-desc">
-                {/* <p>
-                  <h3>{item.content}</h3>
-                </p> */}
-              </div>
-            </div>
+          <div className="quicknews-author-date">
+            <span>AUTHOR</span>
+            <span> </span>
+            <span>DATE</span>
+          </div>
+          <div className="quicknews-article-desc">
+            <p>
+              The most important technology news, developments and trends with
+              insightful analysis and commentary.
+            </p>
           </div>
         </div>
-      );
-    }
-  });
-  return <div className="quicknews">{items}</div>;
+      </div>
+    </div>
+  );
 }
 
 export default Quicknews;

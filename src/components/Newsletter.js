@@ -2,20 +2,24 @@ import React, { useContext } from "react";
 import { StoreContext } from "../context";
 
 function Newsletter() {
-  const contextObj = useContext(StoreContext);
-
-  const items = contextObj.store.dataNew.map((item, i) => {
-    if (i > 15 && i < 22) {
-      return (
-        <li key={i}>
-          <a href={item.url} target="_blank">
-            <h4>{item.title}</h4>
-          </a>
-        </li>
-      );
-    }
-  });
-  return <div className="newsletter">{items}</div>;
+  return (
+    <div className="newsletter">
+      <div class="newsletter_top">
+        <h2>Subscribe to Updates</h2>
+        <p>Get the latest creative news about tech & digital.</p>
+      </div>
+      <div class="newsletter_bot">
+        <form>
+          <input
+            type="email"
+            class="input_email"
+            placeholder="Email address"
+          ></input>
+          <button class="input_button">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  );
 }
 
 export default Newsletter;

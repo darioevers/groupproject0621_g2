@@ -3,6 +3,11 @@
   height: 1000px;
   position: relative;
   display: flex;
+  @include mobile990 {
+    flex-wrap: wrap;
+    width: 150%;
+    height: 100%;
+  }
   .latest-in-tech {
     width: 66%;
     /*    background-color: yellowgreen; */
@@ -19,12 +24,12 @@
       h2 {
         position: relative;
         top: 70px;
-        /* left: 100px; */
+        font-size: 2.5rem;
 
         span {
           color: #43d001;
           font-weight: bolder;
-          font-size: 25px;
+          font-size: 2.5rem;
         }
       }
     }
@@ -34,7 +39,7 @@
       flex-direction: column;
       justify-content: space-around;
       height: 800px;
-      width: 85%;
+      width: 80%;
       position: relative;
       top: 20px;
       left: 96px;
@@ -63,16 +68,51 @@
           /* background-color: rgb(219, 186, 250); */
           padding-left: 30px;
           .latest-article-heading {
-            padding-top: 25px;
+            /*  padding-top: 25px; */
+            /*  background-color: orangered; */
+            width: 95%;
+            height: 40%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            @include mobile990 {
+              /* max-height: 80px; */
+              width: 80%;
+              /* overflow: hidden; */
+            }
+            h2 {
+              font-size: 2rem;
+              @include mobile990 {
+                font-size: 1.8rem;
+
+                width: 80%;
+              }
+            }
           }
           .author-date {
             margin-top: 20px;
             span {
-              font-size: 13px;
+              font-size: 1.3rem;
             }
           }
           .latest-article-desc {
+            /* background-color: orange; */
+            width: 95%;
+            max-height: 40%;
+            overflow: hidden;
             padding-top: 10px;
+            @include mobile990 {
+              width: 80%;
+            }
+            p {
+              font-size: 1.5rem;
+              line-height: 1.4;
+              @include mobile990 {
+                font-size: 1.4rem;
+                line-height: 1.2;
+                width: 80%;
+              }
+            }
           }
         }
       }
