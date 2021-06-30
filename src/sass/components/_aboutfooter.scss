@@ -20,11 +20,14 @@
         color: white;
         margin: 2.5rem 0rem 2.5rem 6rem;
         h4 {
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
+            font-size: 1.6rem;
         }
         h1 {
+            font-size: 2.6rem;
         }
         p {
+            font-size: 1.38rem;
             margin-top: 1rem;
             max-width: 25rem;
             color: rgb(180, 180, 180);
@@ -36,7 +39,10 @@
         .aboutFooter-right-top {
             color: white;
             text-align: right;
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
+            h4 {
+                font-size: 1.6rem;
+            }
         }
         .aboutFooter-right-bot {
             height: 100%;
@@ -79,4 +85,4 @@
             }
         }
     }
-} 
+}
