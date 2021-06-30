@@ -3,6 +3,9 @@
   height: 30%;
   width: 85%;
   position: relative;
+  @include mobile990 {
+    display: none;
+  }
   .social-heading {
     .social-heading-wrapper {
       background-color: black;
@@ -12,8 +15,10 @@
       h2 {
         color: white;
         padding-left: 40px;
+        font-size: 2rem;
         span {
           color: #69c008;
+          font-size: 2rem;
         }
       }
     }

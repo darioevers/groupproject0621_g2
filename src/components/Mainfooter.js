@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 
 
 import {
-    FaFacebook,
-    FaTwitter,
-    FaInstagram,
-    FaVimeoV,
-    FaRegUserCircle,
-  } from "react-icons/fa";
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaVimeoV,
+  FaRegUserCircle,
+} from "react-icons/fa";
 export default function Aboutfooter({ menuOpen, setMenuOpen }) {
   const contextObj = useContext(storContext);
   const [newArr, setNewArr] = useState([]);
@@ -55,8 +55,9 @@ export default function Aboutfooter({ menuOpen, setMenuOpen }) {
    
 return (
     <div class="mainFooter">
-        <div class="mainFooter-top">
+      <div class="mainFooter-top">
         <div className="iconsWrapper">
+<<<<<<< HEAD
         <ul className="iconsList">
           <li className="listItem">
             <Link to="#" target="blank">
@@ -80,16 +81,57 @@ return (
           </li>
         </ul>
       </div>
+=======
+          <ul className="iconsList">
+            <li className="listItem">
+              <a href="#">
+                <FaFacebook />
+              </a>
+            </li>
+            <li className="listItem">
+              <a href="#">
+                <FaTwitter />
+              </a>
+            </li>
+            <li className="listItem">
+              <a href="#">
+                <FaInstagram />
+              </a>
+            </li>
+            <li className="listItem">
+              <a href="#">
+                <FaVimeoV />
+              </a>
+            </li>
+          </ul>
+>>>>>>> 4baec77cbf6a8f9a5a422fd8eb828fdb9e551e8f
         </div>
-        <div class="mainFooter-mid">
+      </div>
+      <div class="mainFooter-mid">
         <div className={"menuFooter " + (menuOpen && "active")}>
+<<<<<<< HEAD
           {footerlink}
       
     </div>
         </div>
         <div class="mainFooter-bot">
             <p>© 2021  dci project</p>
+=======
+          <ul>
+            <li onClick={() => setMenuOpen(false)}>Link1</li>
+            <li onClick={() => setMenuOpen(false)}>Link2</li>
+            <li onClick={() => setMenuOpen(false)}>Link3</li>
+            <li onClick={() => setMenuOpen(false)}>Link4</li>
+            <li onClick={() => setMenuOpen(false)}>Link5</li>
+            <li onClick={() => setMenuOpen(false)}>Link6</li>
+            {/*  {console.log()} */}
+          </ul>
+>>>>>>> 4baec77cbf6a8f9a5a422fd8eb828fdb9e551e8f
         </div>
+      </div>
+      <div class="mainFooter-bot">
+        <p>© 2021 dci project</p>
+      </div>
     </div>
 )
   }

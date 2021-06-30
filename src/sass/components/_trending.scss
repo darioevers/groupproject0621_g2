@@ -2,11 +2,18 @@
   height: 70%;
   width: 85%;
   /* border: 5px solid rgb(72, 255, 0); */
-  /*  background-color: hotpink; */
+  /* background-color: hotpink; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
+  @include mobile990 {
+    width: 90vw;
+    /* height: 500px; */
+    position: relative;
+    /* height: 90%; */
+    left: 50px;
+    /* top: 50px; */
+  }
   .trending-heading {
     position: relative;
     height: 120px;
@@ -17,11 +24,17 @@
       height: 45px;
       display: flex;
       align-items: center;
+      @include mobile990 {
+        top: 30px;
+      }
       h2 {
         color: white;
         padding-left: 40px;
+        font-size: 2rem;
+
         span {
           color: #69c008;
+          font-size: 2rem;
         }
       }
     }
@@ -29,15 +42,20 @@
   .trending-article-container {
     width: 100%;
     height: 100%;
-    /* border: 5px solid orange; */
+    /*  border: 5px solid orange; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
     .trending-article-img {
       min-height: 60%;
-      /*   border: 5px solid black; */
+      /* border: 5px solid black; */
       position: relative;
       min-width: 100%;
+      @include mobile990 {
+        bottom: 100px;
+      }
+
       a {
         min-width: 100%;
         position: relative;
@@ -65,9 +83,18 @@
       .trending-article-heading {
         /*  background-color: orchid; */
         position: relative;
-        top: 30px;
+        top: 40px;
+        @include mobile990 {
+          top: 0;
+        }
         h3 {
-          font-size: 30px;
+          font-size: 3rem;
+
+          /*  border: 5px solid greenyellow; */
+          @include mobile990 {
+            position: relative;
+            bottom: 70px;
+          }
         }
       }
       .trending-author-date {
@@ -76,15 +103,19 @@
         span {
           position: relative;
           bottom: 5px;
+          font-size: 1.5rem;
         }
       }
       .trending-article-desc {
         position: relative;
-        /*  background-color: rgb(218, 112, 112); */
+        /* background-color: rgb(218, 112, 112); */
         bottom: 50px;
-        p {
-          font-size: 20px;
+        @include mobile990 {
           position: relative;
+          bottom: 80px;
+        }
+        p {
+          font-size: 2rem;
         }
       }
     }

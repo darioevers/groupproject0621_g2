@@ -1,7 +1,36 @@
 .newsletter {
-    border: gray 2px solid;
-    border-radius: 10px;
-    height: 35%;
-    width: 85%;
+  border: rgb(141, 184, 152) 2px solid;
+  border-radius: 10px;
+  height: 35%;
+  width: 85%;
+  @include mobile990 {
+    display: none;
   }
-  
+  .newsletter_top {
+    height: 30%;
+    text-align: center;
+    margin-top: 3rem;
+    h2 {
+    }
+    p {
+    }
+  }
+  .newsletter_bot {
+    text-align: center;
+    height: 50%;
+    input {
+      height: 3rem;
+      width: 70%;
+      font-size: 1.2rem;
+      padding-left: 1rem;
+    }
+    button {
+      margin-top: 1rem;
+      height: 3rem;
+      width: 70%;
+      button:hover {
+        color: #000000;
+      }
+    }
+  }
+}
