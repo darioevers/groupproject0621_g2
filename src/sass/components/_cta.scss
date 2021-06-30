@@ -1,6 +1,7 @@
 .cta {
   height: 250px;
   width: 100%;
+  margin-top: 7rem;
 
   display: flex;
   justify-content: center;
@@ -12,13 +13,13 @@
     display: flex;
 
     .side-color {
-      width: 2%;
+      width: 1.5%;
       height: 100%;
       background-color: #57bf05;
     }
     .cta-banner {
       background-color: black;
-      width: 98%;
+      width: 100%;
       margin-left: 80px;
       display: flex;
       flex-direction: column;
@@ -28,7 +29,7 @@
         h4 {
           font-size: 2rem;
           position: relative;
-          top: 30px;
+          top: 2rem;
           color: #6b6b6b;
         }
       }
@@ -37,18 +38,60 @@
         h2 {
           color: white;
           position: relative;
-          top: 10px;
+          top: 0rem;
           font-size: 3.5rem;
         }
       }
-      .cta-btn {
-        button {
-          /* margin-top: 15px; */
-          width: 150px;
-          height: 50px;
-          border-radius: 15px;
-          font-size: 2.5rem;
-        }
+
+.cta-btn{
+  height: 60px;
+  width: 610px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+.field{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+  input{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #0EAD69;
+    border-radius: 5px;
+    padding: 0 130px 0 15px;
+    font-size: 2rem;
+    outline: none;
+  }
+  input::placeholder{
+    color: #999;
+    font-size: 18px;
+  }
+}
+
+.field .btn-2{
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  font-size: 1.6rem;
+  color: #fff;
+  line-height: 40px;
+  background: #0EAD69;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.field .btn-2:active{
+  transform: translateY(-50%) scale(0.9);
+}
+
       }
     }
   }
