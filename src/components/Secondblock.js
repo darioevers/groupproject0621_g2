@@ -51,6 +51,7 @@ function Secondblock() {
         </div>
         <div className="moreintech-articles-container"> {items}</div>
       </div>
+      <div className="divider"></div>
       <div className="quicknews-newsletter">
         <Quicknews />
         <Newsletter />

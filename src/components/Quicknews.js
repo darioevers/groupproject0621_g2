@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Store, StoreContext } from "../context";
-
+ 
 function Quicknews() {
   const contextObj = useContext(StoreContext);
 
