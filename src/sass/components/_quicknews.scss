@@ -1,11 +1,19 @@
 .quicknews {
-  height: 60%;
+  height: 70%;
   width: 85%;
   /*  border: 5px solid rgb(72, 255, 0); */
   /*  background-color: hotpink; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  @include mobile990 {
+    width: 168%;
+    /* height: 500px; */
+    position: relative;
+    /* height: 90%; */
+    left: 95px;
+    top: 50px;
+  }
   .quicknews-heading {
     position: relative;
     height: 120px;
@@ -16,6 +24,9 @@
       height: 45px;
       display: flex;
       align-items: center;
+      @include mobile990 {
+        top: 30px;
+      }
       h2 {
         color: white;
         padding-left: 40px;
@@ -38,6 +49,9 @@
       height: 60%;
       /*   border: 5px solid black; */
       position: relative;
+      @include mobile990 {
+        bottom: 100px;
+      }
       a {
         width: 100%;
         position: relative;
@@ -62,12 +76,20 @@
       justify-content: space-between;
       height: 100%;
       position: relative;
+
       .quicknews-article-heading {
         /*  background-color: orchid; */
         position: relative;
-        top: 30px;
+        top: 40px;
+        @include mobile990 {
+          top: 0;
+        }
         h3 {
-          font-size: 30px;
+          font-size: 3rem;
+          @include mobile990 {
+            position: relative;
+            bottom: 70px;
+          }
         }
       }
       .quicknews-author-date {
@@ -76,15 +98,19 @@
         span {
           position: relative;
           bottom: 5px;
+          font-size: 1.5rem;
         }
       }
       .quicknews-article-desc {
         position: relative;
         /*  background-color: rgb(218, 112, 112); */
         bottom: 50px;
-        p {
-          font-size: 20px;
+        @include mobile990 {
           position: relative;
+          bottom: 80px;
+        }
+        p {
+          font-size: 2rem;
         }
       }
     }

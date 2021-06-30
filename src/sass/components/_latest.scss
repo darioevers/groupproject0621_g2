@@ -5,14 +5,18 @@
   display: flex;
   @include mobile990 {
     flex-wrap: wrap;
-    width: 150%;
-    height: 100%;
+    /*  width: 150%; */
+    height: auto;
+    /* border: 3px solid red; */
   }
   .latest-in-tech {
     width: 66%;
     /*    background-color: yellowgreen; */
     height: 100%;
     position: relative;
+    @include mobile990 {
+      width: 100%;
+    }
     .latest-heading {
       height: 125px;
       width: 85%;
@@ -57,6 +61,10 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          @include mobile990 {
+            min-width: 45%;
+            max-width: 45%;
+          }
           img {
             flex-shrink: 0;
             object-fit: cover;
@@ -83,7 +91,7 @@
             h2 {
               font-size: 2rem;
               @include mobile990 {
-                font-size: 1.8rem;
+                font-size: 1.9rem;
 
                 width: 80%;
               }
@@ -102,7 +110,7 @@
             overflow: hidden;
             padding-top: 10px;
             @include mobile990 {
-              width: 80%;
+              width: 100%;
             }
             p {
               font-size: 1.5rem;
@@ -110,7 +118,7 @@
               @include mobile990 {
                 font-size: 1.4rem;
                 line-height: 1.2;
-                width: 80%;
+                width: 100%;
               }
             }
           }
@@ -132,5 +140,12 @@
     width: 34%;
     height: 100%;
     /* background-color: plum; */
+  }
+}
+ul .latest-article {
+  display: flex;
+  padding: 2rem;
+  .latest-article-img {
+    width: 60%;
   }
 }

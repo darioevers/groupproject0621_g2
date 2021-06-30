@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
 }
 
 .mainNav {
@@ -13,7 +13,7 @@
   flex-direction: row;
   justify-content: space-between;
   @include mobile570 {
-    width: 100vw;
+    min-width: 300px;
   }
   .iconsWrapper {
     width: 38rem;
@@ -68,10 +68,10 @@
       width: 20rem;
     }
     h1 {
-      font-size: 3.5rem;
+      font-size: 4rem;
       color: #d8d8d8;
       @include mobile990 {
-        font-size: 2.7rem;
+        font-size: 3rem;
       }
       @include mobile720 {
         /* color: rgb(0, 60, 255); */
