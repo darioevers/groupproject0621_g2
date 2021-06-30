@@ -10,8 +10,40 @@ export default function Aboutfooter() {
             <p>Phone: 123456789</p>
         </div>
         <div class="aboutFooter-right">
-            {/* API BELONGS HERE */}
+            <div class="aboutFooter-right-top">
+              <h4>OUR PICKS</h4>
+              </div>
+              <div class="aboutFooter-right-bot">
+                <div class="aboutFooter-right-bot-innertop">
+                  <div class="aboutFooter-nondynamic-content leftcontent">
+                  <img src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/01/A2797-10-must-have-gadgets-for-every-architect.jpg"></img>
+                  </div>
+                  <div class="aboutFooter-nondynamic-content">
+                  <img src="https://i.pinimg.com/originals/f0/89/bf/f089bff2613d5a4d1f96f657114be6ab.gif"></img>
+                  </div>
+                  <div class="aboutFooter-nondynamic-content">
+                  <img src="https://thumbs.gfycat.com/AccomplishedSoggyBlackbird-size_restricted.gif"></img>
+                  </div>
+                  <div class="aboutFooter-nondynamic-content rightcontent">
+                  <img src="https://thumbs.gfycat.com/AccomplishedSoggyBlackbird-size_restricted.gif"></img>
+                  </div>
+                </div>
+                <div class="aboutFooter-right-bot-innerbot">
+                <div class="aboutFooter-nondynamic-content leftcontent">
+                <img src="https://thumbs.gfycat.com/AccomplishedSoggyBlackbird-size_restricted.gif"></img>
+                </div>
+                  <div class="aboutFooter-nondynamic-content">
+                  <img src="https://thumbs.gfycat.com/AccomplishedSoggyBlackbird-size_restricted.gif"></img>
+                  </div>
+                  <div class="aboutFooter-nondynamic-content">
+                  <img src="https://thumbs.gfycat.com/AccomplishedSoggyBlackbird-size_restricted.gif"></img>
+                  </div>
+                  <div class="aboutFooter-nondynamic-content rightcontent">
+                  <img src="https://thumbs.gfycat.com/AccomplishedSoggyBlackbird-size_restricted.gif"></img>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
   );
-}
+} 
