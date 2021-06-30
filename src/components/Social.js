@@ -1,12 +1,12 @@
 import React from "react";
-
+ 
 function Social() {
   return (
     <div className="social">
       <div className="social-heading">
         <div className="social-heading-wrapper">
           <h2>
-            socialize with us<span>//</span>
+            SOCIALIZE WITH US <span> //</span>
           </h2>
         </div>
       </div>
