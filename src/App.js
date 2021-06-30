@@ -31,7 +31,6 @@ function App() {
       <Latest2 />
       <Spotlight />
       {/*  <Lastest /> */}
-      <Spotlight />
       <Secondblock />
       <Aboutfooter />
       <Mainfooter />
