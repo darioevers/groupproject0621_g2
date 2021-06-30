@@ -1,7 +1,7 @@
 .newsletter {
   border: rgb(141, 184, 152) 2px solid;
   border-radius: 10px;
-  height: 35%;
+  height: 30%;
   width: 85%;
   @include mobile990 {
     display: none;
@@ -9,28 +9,60 @@
   .newsletter_top {
     height: 30%;
     text-align: center;
+    justify-content: center;
     margin-top: 3rem;
     h2 {
-    }
+        margin-bottom: 1rem;
+        font-size: 2.8rem;
+      }
     p {
+        font-size: 1.4rem;
     }
   }
   .newsletter_bot {
     text-align: center;
     height: 50%;
     input {
-      height: 3rem;
+      height: 5rem;
       width: 70%;
-      font-size: 1.2rem;
+      font-size: 1.8rem;
       padding-left: 1rem;
     }
     button {
-      margin-top: 1rem;
-      height: 3rem;
-      width: 70%;
-      button:hover {
-        color: #000000;
-      }
+        position: relative;
+        width: 70%;
+        padding: 20px;
+        margin: 10px;
+        margin-top: 1rem;
+        font-size: 2rem;
+        border: 0;
+        cursor: pointer;
+        border-radius: 3px;
+        overflow: hidden;
+        transition: 0.4s ease-in;
+        z-index: 1;
+        background: rgb(201, 231, 171);
+    }
+    button::before,
+    button::after {
+        background: #27e446;
+        content: "";
+        position: absolute;
+        z-index: -1;
+    }
+    button::after {
+        height: 100%;
+        left: -35%;
+        top: 0;
+        transform: skew(50deg);
+        transition-duration: 0.6s;
+        transform-origin: top left;
+        width: 0;
+    }
+    button:hover:after {
+        height: 100%;
+        width: 135%;
     }
   }
 }
+
