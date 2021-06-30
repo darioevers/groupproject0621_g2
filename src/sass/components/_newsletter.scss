@@ -3,10 +3,17 @@
   border-radius: 10px;
   height: 35%;
   width: 85%;
+  @include mobile990 {
+    display: none;
+  }
   .newsletter_top {
     height: 30%;
     text-align: center;
     margin-top: 3rem;
+    h2 {
+    }
+    p {
+    }
   }
   .newsletter_bot {
     text-align: center;

@@ -3,6 +3,9 @@
   height: 30%;
   width: 85%;
   position: relative;
+  @include mobile990 {
+    display: none;
+  }
   .social-heading {
     .social-heading-wrapper {
       background-color: black;
