@@ -15,22 +15,22 @@ function App() {
   const [store, setStore] = useState(Store);
   const contextObj = useContext(StoreContext);
   const [menuOpen, setMenuOpen] = useState(false);
-  console.log(contextObj.dataNew);
-  useEffect(() => {
-    setStore((prevState) => {
-      return { ...prevState, fetchData: Store.dataNew };
-    });
-  }, [contextObj.fetchData()]);
+  // console.log(contextObj.dataNew);
+  // useEffect(() => {
+  //   setStore((prevState) => {
+  //     return { ...prevState, fetchData: Store.dataNew };
+  //   });
+  // }, [contextObj.fetchData()]);
   return (
     <StoreContext.Provider value={{ store, setStore }}>
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      {/* <Highlight /> */}
+      <Highlight />
       <Editorschoice />
       <Cta />
       <Latest2 />
       <Spotlight />
-      {/*  <Lastest /> */}
+      {/* <Lastest /> */}
       <Secondblock />
       <Aboutfooter />
       <Mainfooter />
