@@ -10,16 +10,22 @@
     background-color: #3f3f3f;
     height: 100%;
     list-style: none;
+    @include mobile570 {
+      min-width: 300px;
+    }
 
     li {
       font-size: 1.8rem;
       margin: 0 20px;
       color: #a2a2a2;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       cursor: pointer;
+      /* width: 100%; */
       @include mobile570 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin: 0 10px;
+        /* min-width: 100%;
+        max-width: 100%; */
       }
     }
   }
