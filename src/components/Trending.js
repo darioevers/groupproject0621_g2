@@ -2,11 +2,12 @@ import React from "react";
 
 function Trending() {
   return (
+    <div className="trending-wrapper">
     <div className="trending">
       <div className="trending-heading">
         <div className="trending-heading-wrapper">
           <h2>
-            <a id="link4">trending</a> <span>//</span>
+            <a id="link4">TRENDING </a> <span> //</span>
           </h2>
         </div>
       </div>
@@ -37,6 +38,7 @@ function Trending() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

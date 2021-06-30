@@ -14,8 +14,9 @@
       align-items: center;
       h2 {
         color: white;
-        padding-left: 40px;
+        padding-left: 1.5rem;
         font-size: 2rem;
+        font-weight: 300;
         span {
           color: #69c008;
           font-size: 2rem;
@@ -29,7 +30,7 @@
     /* border: 1px solid yellowgreen; */
     display: flex;
     position: relative;
-    top: 15px;
+    top: 1.5rem;
     .social-buttons-left {
       flex: 1;
       display: flex;
@@ -37,35 +38,116 @@
       justify-content: space-between;
       /*  border: 2px solid black; */
       .facebook-btn {
+        position: relative;
         width: 95%;
         height: 45px;
-        background-color: #737ee3;
-        color: white;
-        text-align: left;
-        padding-left: 25px;
-        font-size: 18px;
-        border: none;
-      }
+        border: 0;
+        cursor: pointer;
+        border-radius: 3px;
+        overflow: hidden;
+        transition: 0.4s ease-in;
+        z-index: 1;
+        background: #1877f2;
+        a{
+          font-size: 2rem;
+          color: white;
+          text-decoration: none;
+        }
+    }
+    .facebook-btn::before,
+    .facebook-btn::after {
+        background: #5395eb;
+        content: "";
+        position: absolute;
+        z-index: -1;
+    }
+    .facebook-btn::after {
+        height: 100%;
+        left: -35%;
+        top: 0;
+        transform: skew(50deg);
+        transition-duration: 0.6s;
+        transform-origin: top left;
+        width: 0;
+    }
+    .facebook-btn:hover:after {
+        height: 100%;
+        width: 135%;
+    }
       .pinterest-btn {
+        position: relative;
         width: 95%;
         height: 45px;
-        background-color: #c61212;
-        color: white;
-        text-align: left;
-        padding-left: 25px;
-        font-size: 18px;
-        border: none;
-      }
+        border: 0;
+        cursor: pointer;
+        border-radius: 3px;
+        overflow: hidden;
+        transition: 0.4s ease-in;
+        z-index: 1;
+        background: #bd081c;
+        a{
+          font-size: 2rem;
+          color: white;
+          text-decoration: none;
+        }
+    }
+    .pinterest-btn::before,
+    .pinterest-btn::after {
+        background: #ec0a24;
+        content: "";
+        position: absolute;
+        z-index: -1;
+    }
+    .pinterest-btn::after {
+        height: 100%;
+        left: -35%;
+        top: 0;
+        transform: skew(50deg);
+        transition-duration: 0.6s;
+        transform-origin: top left;
+        width: 0;
+    }
+    .pinterest-btn:hover:after {
+        height: 100%;
+        width: 135%;
+    }
       .youtube-btn {
+        position: relative;
         width: 95%;
         height: 45px;
-        background-color: #ff0000;
-        color: white;
-        text-align: left;
-        padding-left: 25px;
-        font-size: 18px;
-        border: none;
-      }
+        border: 0;
+        cursor: pointer;
+        border-radius: 3px;
+        overflow: hidden;
+        transition: 0.4s ease-in;
+        z-index: 1;
+        background: #ff0000;
+        a{
+          font-size: 2rem;
+          color: white;
+          text-decoration: none;
+        }
+    }
+    .youtube-btn::before,
+    .youtube-btn::after {
+        background: #fa6a6a;
+        content: "";
+        position: absolute;
+        z-index: -1;
+    }
+    .youtube-btn::after {
+        height: 100%;
+        left: -35%;
+        top: 0;
+        transform: skew(50deg);
+        transition-duration: 0.6s;
+        transform-origin: top left;
+        width: 0;
+    }
+    .youtube-btn:hover:after {
+        height: 100%;
+        width: 135%;
+    }
     }
     .social-buttons-right {
       /*  border: 2px solid violet; */
@@ -75,35 +157,116 @@
       justify-content: space-between;
       align-items: flex-end;
       .twitter-btn {
-        border: none;
+        position: relative;
         width: 95%;
         height: 45px;
-        background-color: #13d5ef;
-        color: white;
-        text-align: left;
-        padding-left: 25px;
-        font-size: 18px;
-      }
+        border: 0;
+        cursor: pointer;
+        border-radius: 3px;
+        overflow: hidden;
+        transition: 0.4s ease-in;
+        z-index: 1;
+        background: #1da1f2;
+        a{
+          font-size: 2rem;
+          color: white;
+          text-decoration: none;
+        }
+    }
+    .twitter-btn::before,
+    .twitter-btn::after {
+        background: #5db3e9;
+        content: "";
+        position: absolute;
+        z-index: -1;
+    }
+    .twitter-btn::after {
+        height: 100%;
+        left: -35%;
+        top: 0;
+        transform: skew(50deg);
+        transition-duration: 0.6s;
+        transform-origin: top left;
+        width: 0;
+    }
+    .twitter-btn:hover:after {
+        height: 100%;
+        width: 135%;
+    }
       .instagram-btn {
-        border: none;
+        position: relative;
         width: 95%;
         height: 45px;
-        background-color: #c6127e;
-        color: white;
-        text-align: left;
-        padding-left: 25px;
-        font-size: 18px;
-      }
+        border: 0;
+        cursor: pointer;
+        border-radius: 3px;
+        overflow: hidden;
+        transition: 0.4s ease-in;
+        z-index: 1;
+        background: #c32aa3;
+        a{
+          font-size: 2rem;
+          color: white;
+          text-decoration: none;
+        }
+    }
+    .instagram-btn::before,
+    .instagram-btn::after {
+        background: #f15dd1;
+        content: "";
+        position: absolute;
+        z-index: -1;
+    }
+    .instagram-btn::after {
+        height: 100%;
+        left: -35%;
+        top: 0;
+        transform: skew(50deg);
+        transition-duration: 0.6s;
+        transform-origin: top left;
+        width: 0;
+    }
+    .instagram-btn:hover:after {
+        height: 100%;
+        width: 135%;
+    }
       .vimeo-btn {
-        border: none;
+        position: relative;
         width: 95%;
         height: 45px;
-        background-color: #47f2d3;
-        color: white;
-        text-align: left;
-        padding-left: 25px;
-        font-size: 18px;
-      }
+        border: 0;
+        cursor: pointer;
+        border-radius: 3px;
+        overflow: hidden;
+        transition: 0.4s ease-in;
+        z-index: 1;
+        background: #1ab7ea;
+        a{
+          font-size: 2rem;
+          color: white;
+          text-decoration: none;
+        }
+    }
+    .vimeo-btn::before,
+    .vimeo-btn::after {
+        background: #7edcfb;
+        content: "";
+        position: absolute;
+        z-index: -1;
+    }
+    .vimeo-btn::after {
+        height: 100%;
+        left: -35%;
+        top: 0;
+        transform: skew(50deg);
+        transition-duration: 0.6s;
+        transform-origin: top left;
+        width: 0;
+    }
+    .vimeo-btn:hover:after {
+        height: 100%;
+        width: 135%;
+    }
     }
   }
 }
