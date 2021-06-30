@@ -19,7 +19,7 @@ function App() {
     <storContext.Provider value={store}>
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Highlight />
+      {/* <Highlight /> */}
       <Editorschoice />
       <Cta />
       <Latest2 />
