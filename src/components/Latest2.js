@@ -4,7 +4,7 @@ import Trending from "./Trending";
 import { StoreContext } from "../context";
 function Latest2() {
   const contextObj = useContext(StoreContext);
-  const items = contextObj.store.dataNew.map((item, i) => {
+  const items = contextObj.newArr.map((item, i) => {
     if (i > 15 && i < 20) {
       return (
         <div key={i} className="latest-article">

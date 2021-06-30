@@ -15,14 +15,18 @@ function App() {
   const [store, setStore] = useState(Store);
   const contextObj = useContext(StoreContext);
   const [menuOpen, setMenuOpen] = useState(false);
-  // console.log(contextObj.dataNew);
-  // useEffect(() => {
-  //   setStore((prevState) => {
-  //     return { ...prevState, fetchData: Store.dataNew };
-  //   });
-  // }, [contextObj.fetchData()]);
+  const [newArr, setNewArr] = useState([]);
+
+  useEffect(() => {
+    fetch(
+      "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=976c618d659c44fd825f99e88a65267e"
+    )
+      .then((response) => response.json())
+      .then((data) => setNewArr(data.articles));
+  }, []);
+  console.log(newArr);
   return (
-    <StoreContext.Provider value={{ store, setStore }}>
+    <StoreContext.Provider value={{ newArr, setStore }}>
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Highlight />

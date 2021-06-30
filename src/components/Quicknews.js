@@ -3,20 +3,10 @@ import { Store, StoreContext } from "../context";
 
 function Quicknews() {
   const contextObj = useContext(StoreContext);
-  const [store, setStore] = useState(Store);
 
-  const [newArr, setNewArr] = useState([]);
-
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => response.json())
-      .then((data) => {
-        setNewArr(data);
-        setStore(() => (store.dataNew = data));
-      });
-  }, [newArr]);
-  const items = newArr.map((item, i) => {
-    if (i > 16 && i < 20) {
+  console.log(contextObj.newArr);
+  const items = contextObj.newArr.map((item, i) => {
+    if (i > 16 && i < 18) {
       return (
         <div className="quicknews">
           <div className="quicknews-heading">
@@ -34,7 +24,7 @@ function Quicknews() {
             </div>
             <div className="quicknews-article-text">
               <div className="quicknews-article-heading">
-                <h3>{item.title}</h3>
+                <h4>{item.title}</h4>
               </div>
               <div className="quicknews-author-date">
                 <span>{item.author}</span>

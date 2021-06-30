@@ -3,23 +3,11 @@ import { Store, StoreContext } from "../context";
 
 function Highlight() {
   const contextObj = useContext(StoreContext);
-  const [store, setStore] = useState(Store);
 
-  const [newArr, setNewArr] = useState([]);
-
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => response.json())
-      .then((data) => {
-        setNewArr(data);
-        setStore(() => (store.dataNew = data));
-      });
-  }, [newArr]);
-  const items = newArr.map((item, i) => {
+  console.log(contextObj.newArr);
+  const items = contextObj.newArr.map((item, i) => {
     if (i > 3 && i < 7) {
       return (
-        // <div key={i} className={namClas.map((nam) => "highlight-" + nam)}>
-
         <div key={i} className="highlight-left">
           <div className="highlight-left-img">
             <a href={item.url} target="_blank">
