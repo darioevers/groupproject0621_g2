@@ -43,7 +43,7 @@ function Quicknews() {
       );
     }
   });
-  return <div className="quicknews">{items}</div>;
+  return <div className="quicknews-wrapper">{items}</div>;
 }
 
 export default Quicknews;

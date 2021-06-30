@@ -11,7 +11,7 @@ function Highlight() {
       console.log(dateArr);
 
       return (
-        <div key={i} className="highlight-left">
+        <div key={i} className="highlight">
           <div className="highlight-left-img">
             <a href={item.url} target="_blank">
               <img src={item.urlToImage} />
