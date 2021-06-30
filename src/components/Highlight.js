@@ -13,10 +13,13 @@ function Highlight() {
             <a href={item.url} target="_blank">
               <img src={item.urlToImage} />
             </a>
+
             <div className="highlight-text">
               <h4>TECH NEWS HIGHLIGHT</h4>
               <div className="highlight-heading">
-                <h3>{item.title}</h3>
+                <a href={item.url} target="_blank">
+                  <h3>{item.title}</h3>
+                </a>
               </div>
               <div className="author-date-left">
                 <span>{item.author} </span> <span> / </span>

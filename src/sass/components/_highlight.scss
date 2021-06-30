@@ -30,8 +30,8 @@
       opacity: 0.75;
       width: 100%;
       position: relative;
-      bottom: 162px;
-      height: 160px;
+      bottom: 152px;
+      height: 150px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -48,11 +48,17 @@
       .highlight-heading {
         /*  background-color: rgb(23, 7, 255); */
         overflow: hidden;
-        h3 {
-          font-size: 2.6rem;
-          line-height: 32px;
-          color: white;
-          letter-spacing: 1px;
+        a {
+          text-decoration: none;
+          &:visited {
+            color: white;
+          }
+          h3 {
+            font-size: 2.6rem;
+            line-height: 32px;
+            color: white;
+            letter-spacing: 1px;
+          }
         }
       }
       .author-date-left {
