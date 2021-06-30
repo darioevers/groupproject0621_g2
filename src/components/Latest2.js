@@ -6,6 +6,7 @@ function Latest2() {
   const contextObj = useContext(StoreContext);
   const items = contextObj.newArr.map((item, i) => {
     if (i > 15 && i < 20) {
+      const dateArr = item.publishedAt.split("").slice(0, 10).join("");
       return (
         <div key={i} className="latest-article">
           <div className="latest-article-img">
@@ -15,11 +16,13 @@ function Latest2() {
           </div>
           <div className="latest-article-text">
             <div className="latest-article-heading">
-              <h2>{item.title}</h2>
+              <a href={item.url} target="_blank">
+                <h3>{item.title}</h3>
+              </a>
             </div>
             <div className="author-date">
               <span> {item.author}</span> <span> / </span>
-              <span> {item.publishedAt}</span>
+              <span> {dateArr}</span>
             </div>
             <div className="latest-article-desc">
               <p>{item.content}</p>
@@ -34,7 +37,7 @@ function Latest2() {
       <div className="latest-in-tech">
         <div className="latest-heading">
           <h2>
-            LATEST IN TECH <span>//</span>
+            <a id="link3"> LATEST IN TECH </a> <span>//</span>
           </h2>
         </div>
         <ul className="latest-articles-container">{items}</ul>

@@ -1,16 +1,28 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 function Navbar({ menuOpen, setMenuOpen }) {
   return (
     <div className={"menu " + (menuOpen && "active")}>
       <ul>
-        <li onClick={() => setMenuOpen(false)}>Link1</li>
-        <li onClick={() => setMenuOpen(false)}>Link2</li>
-        <li onClick={() => setMenuOpen(false)}>Link3</li>
-        <li onClick={() => setMenuOpen(false)}>Link4</li>
-        <li onClick={() => setMenuOpen(false)}>Link5</li>
-        <li onClick={() => setMenuOpen(false)}>Link6</li>
-        {/*  {console.log()} */}
+        <li onClick={() => setMenuOpen(false)}>
+          <a href="#link1">more in tech</a>
+        </li>
+
+        <li onClick={() => setMenuOpen(false)}>
+          <a href="#link2">spotlight</a>
+        </li>
+
+        <li onClick={() => setMenuOpen(false)}>
+          <a href="#link3">latest in tech</a>
+        </li>
+
+        <li onClick={() => setMenuOpen(false)}>
+          <a href="#link4">trending</a>
+        </li>
+
+        <li onClick={() => setMenuOpen(false)}>
+          <a href="#link5">quick news</a>
+        </li>
       </ul>
     </div>
   );
