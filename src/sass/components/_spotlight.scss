@@ -57,16 +57,17 @@
     .spotlight-content-right-container {
       width: 60%;
       height: 600px;
-      border: 2px solid rgb(255, 0, 55);
+
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       .spotlight-content-right-top-wrapper {
         width: 100%;
         height: 50%;
-        background-color: orange;
+
         display: flex;
         justify-content: space-between;
+        position: relative;
         .spotlight-content-right {
           min-width: 47%;
           max-width: 47%;
@@ -80,11 +81,16 @@
             height: 100%;
           }
         }
+
+        .margin {
+          position: relative;
+          left: 30px;
+        }
       }
       .spotlight-content-right-bottom-wrapper {
         width: 100%;
         height: 50%;
-        background-color: rgb(4, 0, 255);
+
         display: flex;
         justify-content: space-between;
         .spotlight-content-right {
@@ -97,6 +103,10 @@
             width: 100%;
             height: 100%;
           }
+        }
+        .margin {
+          position: relative;
+          left: 30px;
         }
       }
     }

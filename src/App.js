@@ -12,30 +12,27 @@ import Secondblock from "./components/Secondblock";
 import Aboutfooter from "./components/Aboutfooter";
 import Mainfooter from "./components/Mainfooter";
 import Spotlight from "./components/Spotlight";
-
 function App() {
   const store = useContext(Store);
-
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <storContext.Provider value={store}>
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-
       <Highlight />
-
       <Editorschoice />
-
       <Cta />
       <Latest2 />
       <Spotlight />
       {/*  <Lastest /> */}
+<<<<<<< HEAD
+=======
+
+>>>>>>> c1b00fc28589b6719f5f43d172edaa58dd384854
       <Secondblock />
       <Aboutfooter />
       <Mainfooter />
     </storContext.Provider>
   );
 }
-
 export default App;
