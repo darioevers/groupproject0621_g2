@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1026px) {
+    .aboutFooter-right-bot-innerbot {
+        display: none;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +43,7 @@
             .aboutFooter-right-bot-innertop{
                 display: flex;
                 height: 40%;
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
                 .aboutFooter-nondynamic-content{
                     height: 100%;
                     width: 23%;
