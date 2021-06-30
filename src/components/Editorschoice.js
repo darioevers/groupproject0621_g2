@@ -46,7 +46,7 @@ function Editorschoice() {
           </div>
           <div className="editor-item">
             <div className="editor-item-image">
-              <img src="https://monophy.com/media/NOEG6shRi2taYK2olX/monophy.gif"></img>
+              <img src="https://i.gifer.com/7RMy.gif"></img>
             </div>
             <div className="editor-item-heading">
               <a
