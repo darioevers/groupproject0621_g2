@@ -44,12 +44,13 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      /*  background-color: rgb(50, 78, 205); */
+      /* background-color: rgb(50, 78, 205); */
       @include mobile990 {
-        height: 200%;
+        /* height: 200%; */
       }
       .editor-item {
-        max-height: 100%;
+        /* max-height: 100%; */
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -58,11 +59,19 @@
         /* min-width: 250px; */
         /* flex-grow: 1; */
         flex-wrap: wrap;
+        @include mobile990 {
+          /*  background-color: rgb(135, 222, 189); */
+        }
         .editor-item-image {
           overflow: hidden;
 
           height: 65%;
           width: 100%;
+          @include mobile990 {
+            /*  background-color: burlywood; */
+            height: 80%;
+            width: 100%;
+          }
           img {
             height: 100%;
             width: 100%;
@@ -76,14 +85,15 @@
             font-size: 2.5rem;
             padding-top: 10px;
             @include mobile990 {
-              font-size: 2rem;
+              font-size: 2.5rem;
+              padding-top: 0;
             }
           }
         }
         .author-date {
           padding-bottom: 50px;
           @include mobile990 {
-            padding-bottom: 30px;
+            padding-bottom: 0;
           }
           span {
             font-size: 1.4rem;
