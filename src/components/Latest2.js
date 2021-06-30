@@ -4,34 +4,32 @@ import Trending from "./Trending";
 import { StoreContext } from "../context";
 function Latest2() {
   const contextObj = useContext(StoreContext);
-  const latest = contextObj.store.dataNew.map((item, i) => {
-    if (i > 3 && i < 8) {
+  const items = contextObj.store.dataNew.map((item, i) => {
+    if (i > 15 && i < 20) {
       return (
-        <li key={i}>
-          <div className="latest-article">
-            <div>
-              <a href={item.url} target="_blank">
-                <img
-                  alt="tech"
-                  className="latest-article-img"
-                  src={item.urlToImage}
-                />
-              </a>
+        <div key={i} className="latest-article">
+          <div>
+            <a href={item.url} target="_blank">
+              <img
+                alt="tech"
+                className="latest-article-img"
+                src={item.urlToImage}
+              />
+            </a>
+          </div>
+          <div className="latest-article-text">
+            <div className="latest-article-heading">
+              <h2>{item.title}</h2>
             </div>
-            <div className="latest-article-text">
-              <div className="latest-article-heading">
-                <h2>{item.title}</h2>
-              </div>
-              <div className="author-date">
-                <span>AUTHOR : {item.author}</span> <span> / </span>
-                <span>DATE : {item.publishedAt}</span>
-              </div>
-              <div className="latest-article-desc">
-                <p>{item.content}</p>
-              </div>
+            <div className="author-date">
+              <span> {item.author}</span> <span> / </span>
+              <span> {item.publishedAt}</span>
+            </div>
+            <div className="latest-article-desc">
+              <p>{item.content}</p>
             </div>
           </div>
-        </li>
+        </div>
       );
     }
   });
@@ -43,10 +41,12 @@ function Latest2() {
             LATEST IN TECH <span>//</span>
           </h2>
         </div>
-        <ul className="latest-articles-container">{latest}</ul>
+        <ul className="latest-articles-container">{items}</ul>
       </div>
+      <div className="divider"></div>
       <div className="trending-social">
         <Trending />
+
         <Social />
       </div>
     </div>

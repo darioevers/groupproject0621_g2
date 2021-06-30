@@ -8,10 +8,10 @@ const Lastest = () => {
     return (
       <li key={i}>
         <h2>{item.title} </h2>
-        {/* <h3>{item.content}</h3>
-      <h5>{item.author}</h5>
-      <h6>{item.publishedAt} </h6>
-      <img src={item.urlToImage} /> */}
+        <h3>{item.content}</h3>
+        <h5>{item.author}</h5>
+        <h6>{item.publishedAt} </h6>
+        <img src={item.urlToImage} />
       </li>
     );
   });

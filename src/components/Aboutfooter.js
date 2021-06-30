@@ -1,8 +1,8 @@
 import React from "react";
 export default function Aboutfooter() {
   return (
-    <div class="aboutFooter">
-      <div class="aboutFooter-left">
+    <div className="aboutFooter">
+      <div className="aboutFooter-left">
         <h4>ABOUT US</h4>
         <h1>TECH NEWS</h1>
         <p>
@@ -13,7 +13,7 @@ export default function Aboutfooter() {
         <p>Email: TECHNEWS@TECHNEWS.COM</p>
         <p>Phone: 123456789</p>
       </div>
-      <div class="aboutFooter-right">{/* API BELONGS HERE */}</div>
+      <div className="aboutFooter-right">{/* API BELONGS HERE */}</div>
     </div>
   );
 }

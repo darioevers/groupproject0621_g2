@@ -4,7 +4,7 @@ const Store = {
   dataNew: [],
   fetchData: function () {
     fetch(
-      "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=456c11b241e8410394c1cf4681c37216"
+      "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=976c618d659c44fd825f99e88a65267e"
     )
       .then((response) => response.json())
       .then((data) => {

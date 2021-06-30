@@ -1,5 +1,92 @@
-.trending li {
-  height: 60%;
-  width: 100%;
-  background-color: hotpink;
+.trending {
+  height: 70%;
+  width: 85%;
+  /* border: 5px solid rgb(72, 255, 0); */
+  /*  background-color: hotpink; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .trending-heading {
+    position: relative;
+    height: 120px;
+    .trending-heading-wrapper {
+      position: relative;
+      top: 75px;
+      background-color: black;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      h2 {
+        color: white;
+        padding-left: 40px;
+        span {
+          color: #69c008;
+        }
+      }
+    }
+  }
+  .trending-article-container {
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .trending-article-img {
+      min-height: 60%;
+      /*   border: 5px solid black; */
+      position: relative;
+      min-width: 100%;
+      a {
+        min-width: 100%;
+        position: relative;
+        top: 10px;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        img {
+          flex-shrink: 0;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .trending-article-text {
+      /*  background-color: orange; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      position: relative;
+      .trending-article-heading {
+        /*  background-color: orchid; */
+        position: relative;
+        top: 30px;
+        h3 {
+          font-size: 30px;
+        }
+      }
+      .trending-author-date {
+        /* background-color: rgb(112, 202, 218); */
+        position: relative;
+        span {
+          position: relative;
+          bottom: 5px;
+        }
+      }
+      .trending-article-desc {
+        position: relative;
+        /*  background-color: rgb(218, 112, 112); */
+        bottom: 50px;
+        p {
+          font-size: 20px;
+          position: relative;
+        }
+      }
+    }
+  }
 }

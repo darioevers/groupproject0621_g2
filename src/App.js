@@ -7,8 +7,7 @@ import { Store, StoreContext } from "./context";
 import Highlight from "./components/Highlight";
 import Editorschoice from "./components/Editorschoice";
 import Cta from "./components/Cta";
-import Latest from "./components/Latest";
-
+import Secondblock from "./components/Secondblock";
 import Aboutfooter from "./components/Aboutfooter";
 import Mainfooter from "./components/Mainfooter";
 import Spotlight from "./components/Spotlight";
@@ -31,12 +30,12 @@ function App() {
       <Cta />
       <Latest2 />
       <Spotlight />
-      <Latest />
-
+      {/*  <Lastest /> */}
+      <Spotlight />
+      <Secondblock />
       <Aboutfooter />
       <Mainfooter />
     </StoreContext.Provider>
   );
 }
-
 export default App;

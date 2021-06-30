@@ -1,19 +1,97 @@
 .latest-trending-social {
   width: 100%;
   height: 1000px;
-  background-color: yellow;
+  position: relative;
   display: flex;
   .latest-in-tech {
     width: 66%;
-    background-color: yellowgreen;
+    /*    background-color: yellowgreen; */
     height: 100%;
+    position: relative;
+    .latest-heading {
+      height: 125px;
+      width: 85%;
+      margin: 0 auto;
+
+      /* background-color: hotpink; */
+      position: relative;
+      border-bottom: 1px solid #c0c0c0;
+      h2 {
+        position: relative;
+        top: 70px;
+        /* left: 100px; */
+
+        span {
+          color: #43d001;
+          font-weight: bolder;
+          font-size: 25px;
+        }
+      }
+    }
+    .latest-articles-container {
+      /* background-color: blue; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 800px;
+      width: 85%;
+      position: relative;
+      top: 20px;
+      left: 96px;
+      .latest-article {
+        height: 22%;
+        width: 100%;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: row;
+
+        .latest-article-img {
+          min-width: 30%;
+          max-width: 30%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            flex-shrink: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .latest-article-text {
+          /* background-color: rgb(219, 186, 250); */
+          padding-left: 30px;
+          .latest-article-heading {
+            padding-top: 25px;
+          }
+          .author-date {
+            margin-top: 20px;
+            span {
+              font-size: 13px;
+            }
+          }
+          .latest-article-desc {
+            padding-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  .divider {
+    width: 1px;
+    height: 85.5%;
+    background-color: #c0c0c0;
+    position: relative;
+    right: 50px;
+    top: 75px;
   }
   .trending-social {
     display: flex;
     flex-direction: column;
     width: 34%;
     height: 100%;
-    background-color: plum;
+    /* background-color: plum; */
   }
 }
 ul .latest-article {
