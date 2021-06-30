@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Store, StoreContext } from "../context";
-
+ 
 function Quicknews() {
   const contextObj = useContext(StoreContext);
 
@@ -13,7 +13,7 @@ function Quicknews() {
           <div className="quicknews-heading">
             <div className="quicknews-heading-wrapper">
               <h2>
-                <a id="link5">quick news</a> <span>//</span>
+                <a id="link5">QUICK NEWS </a> <span> //</span>
               </h2>
             </div>
           </div>

@@ -21,10 +21,10 @@
       /* height: 90%; */
       left: 50px;
       /* top: 50px; */
-    }
+    } 
     .quicknews-heading {
       position: relative;
-      height: 120px;
+      height: 1rem;
       .quicknews-heading-wrapper {
         width: 100%;
         position: relative;
@@ -38,14 +38,19 @@
         }
         h2 {
           color: white;
-          padding-left: 40px;
+          padding-left: 2rem;
+
+          a{
+            font-size: 2rem;
+            font-weight: 300;
+          }
 
           a {
             font-size: 2rem;
           }
           span {
             color: #69c008;
-            font-size: 2rem;
+            font-size: 2.3rem;
           }
         }
       }
@@ -59,7 +64,7 @@
       justify-content: space-evenly;
 
       .quicknews-article-img {
-        min-height: 60%;
+        height: 80%;
         /* border: 5px solid black; */
         position: relative;
         min-width: 100%;
@@ -75,7 +80,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-top: 50px;
+          margin-top: 5rem;
           img {
             flex-shrink: 0;
             object-fit: cover;
@@ -86,26 +91,23 @@
       }
       .quicknews-article-text {
         /*    background-color: orange; */
-
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         min-height: 30%;
         position: relative;
-        top: 20px;
+        top: 1rem;
         .quicknews-article-heading {
           /* background-color: orchid; */
           position: relative;
-          bottom: 20px;
+          bottom: 1rem;
           width: 100%;
           @include mobile990 {
             top: 0;
           }
-          a {
-            text-decoration: none;
-            h4 {
-              font-size: 3rem;
-              letter-spacing: 1px;
+          h4 {
+            font-size: 2.2rem;
+            letter-spacing: 1px;
 
               /* border: 5px solid greenyellow; */
               @include mobile990 {
@@ -136,8 +138,8 @@
           }
           p {
             position: relative;
-            top: 20px;
-            font-size: 1.8rem;
+            top: 1rem;
+            font-size: 1.7rem;
           }
         }
       }
