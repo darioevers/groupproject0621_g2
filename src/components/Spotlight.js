@@ -5,7 +5,7 @@ function Spotlight() {
     <div className="spotlight">
       <div className="spotlight-heading">
         <h2>
-          SPOTLIGHT <span>//</span>
+          <a id="link2"> SPOTLIGHT </a> <span>//</span>
         </h2>
         <div className="spotlight-divider"></div>
       </div>

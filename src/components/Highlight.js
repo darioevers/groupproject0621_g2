@@ -7,6 +7,9 @@ function Highlight() {
   console.log(contextObj.newArr);
   const items = contextObj.newArr.map((item, i) => {
     if (i > 3 && i < 7) {
+      const dateArr = item.publishedAt.split("").slice(0, 10).join("");
+      console.log(dateArr);
+
       return (
         <div key={i} className="highlight-left">
           <div className="highlight-left-img">
@@ -17,11 +20,13 @@ function Highlight() {
           <div className="highlight-right-text">
             <h4>CATEGORY</h4>
             <div className="highlight-heading-left">
-              <h3>{item.title}</h3>
+              <a href={item.url} target="_blank">
+                <h3>{item.title}</h3>
+              </a>
             </div>
             <div className="author-date-left">
               <span>{item.author} </span> <span> / </span>
-              <span>{item.publishedAt} </span>
+              <span>{dateArr}</span>
             </div>
           </div>
         </div>
