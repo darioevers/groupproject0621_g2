@@ -19,7 +19,7 @@
     height: 120px;
     .trending-heading-wrapper {
       position: relative;
-      top: 75px;
+      top: 70px;
       background-color: black;
       height: 45px;
       display: flex;
@@ -59,12 +59,12 @@
       a {
         min-width: 100%;
         position: relative;
-        top: 10px;
+        /* top: 10px; */
         height: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 70px;
+        margin-top: 50px;
         img {
           flex-shrink: 0;
           object-fit: cover;
@@ -81,9 +81,10 @@
       height: 100%;
       position: relative;
       .trending-article-heading {
-        /*  background-color: orchid; */
+        /* background-color: orchid; */
         position: relative;
-        top: 40px;
+        top: 10px;
+        width: 100%;
         @include mobile990 {
           top: 0;
         }
@@ -102,14 +103,15 @@
         position: relative;
         span {
           position: relative;
-          bottom: 5px;
+          bottom: 10px;
           font-size: 1.5rem;
         }
       }
       .trending-article-desc {
         position: relative;
         /* background-color: rgb(218, 112, 112); */
-        bottom: 50px;
+        bottom: 30px;
+        letter-spacing: 1px;
         @include mobile990 {
           position: relative;
           bottom: 80px;

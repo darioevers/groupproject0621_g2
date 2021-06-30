@@ -11,7 +11,7 @@
   }
   .latest-in-tech {
     width: 66%;
-    /*    background-color: yellowgreen; */
+    /* background-color: yellowgreen; */
     height: 100%;
     position: relative;
     @include mobile990 {
@@ -38,7 +38,7 @@
       }
     }
     .latest-articles-container {
-      /* background-color: blue; */
+      background-color: blue;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
