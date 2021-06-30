@@ -12,22 +12,22 @@ export default function Header() {
       <div className="iconsWrapper">
         <ul className="iconsList">
           <li className="listItem">
-            <a href="#">
+            <a href="https://www.facebook.com/" target="_blank">
               <FaFacebook />
             </a>
           </li>
           <li className="listItem">
-            <a href="#">
+            <a href="https://www.twitter.com/" target="_blank">
               <FaTwitter />
             </a>
           </li>
           <li className="listItem">
-            <a href="#">
+            <a href="https://www.instagram.com/" target="_blank">
               <FaInstagram />
             </a>
           </li>
           <li className="listItem">
-            <a href="#">
+            <a href="https://www.vimeo.com/" target="_blank">
               <FaVimeoV />
             </a>
           </li>
