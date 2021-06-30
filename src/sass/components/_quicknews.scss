@@ -39,8 +39,10 @@
         h2 {
           color: white;
           padding-left: 40px;
-          font-size: 2rem;
 
+          a {
+            font-size: 2rem;
+          }
           span {
             color: #69c008;
             font-size: 2rem;
@@ -99,14 +101,17 @@
           @include mobile990 {
             top: 0;
           }
-          h3 {
-            font-size: 3rem;
-            letter-spacing: 1px;
+          a {
+            text-decoration: none;
+            h4 {
+              font-size: 3rem;
+              letter-spacing: 1px;
 
-            /* border: 5px solid greenyellow; */
-            @include mobile990 {
-              position: relative;
-              bottom: 70px;
+              /* border: 5px solid greenyellow; */
+              @include mobile990 {
+                position: relative;
+                bottom: 70px;
+              }
             }
           }
         }

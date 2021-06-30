@@ -15,18 +15,30 @@
     }
 
     li {
-      font-size: 1.8rem;
-      margin: 0 20px;
+      margin: 0 30px;
       color: #a2a2a2;
       letter-spacing: 1px;
       cursor: pointer;
       /* width: 100%; */
+      /* background-color: orange; */
       @include mobile570 {
         font-size: 1.2rem;
         margin: 0 10px;
         /* min-width: 100%;
         max-width: 100%; */
+        a {
+          /*  color: orange; */
+          font-size: 3rem;
+        }
       }
     }
+  }
+}
+.link {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  &:hover {
+    color: #c97803;
   }
 }

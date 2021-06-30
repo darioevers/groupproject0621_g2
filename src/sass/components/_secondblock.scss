@@ -29,6 +29,9 @@
         position: relative;
         top: 70px;
         font-size: 2.5rem;
+        a {
+          font-size: 2.5rem;
+        }
 
         span {
           color: #43d001;
@@ -86,12 +89,16 @@
               width: 80%;
               /* overflow: hidden; */
             }
-            h2 {
-              font-size: 2rem;
-              @include mobile990 {
-                font-size: 1.9rem;
+            a {
+              text-decoration: none;
+              h3 {
+                font-size: 2rem;
 
-                width: 80%;
+                @include mobile990 {
+                  font-size: 1.9rem;
+
+                  width: 80%;
+                }
               }
             }
           }

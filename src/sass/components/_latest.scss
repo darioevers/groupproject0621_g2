@@ -28,8 +28,10 @@
       h2 {
         position: relative;
         top: 70px;
-        font-size: 2.5rem;
 
+        a {
+          font-size: 2.5rem;
+        }
         span {
           color: #43d001;
           font-weight: bolder;
@@ -75,6 +77,9 @@
         .latest-article-text {
           /* background-color: rgb(219, 186, 250); */
           padding-left: 30px;
+          display: flex;
+          flex-direction: column;
+          /* justify-content: space-around; */
           .latest-article-heading {
             /*  padding-top: 25px; */
             /*  background-color: orangered; */
@@ -88,12 +93,18 @@
               width: 80%;
               /* overflow: hidden; */
             }
-            h2 {
-              font-size: 2rem;
-              @include mobile990 {
-                font-size: 1.9rem;
+            a {
+              text-decoration: none;
+              &:visited {
+                color: #3e74ee;
+              }
+              h3 {
+                font-size: 2rem;
+                @include mobile990 {
+                  font-size: 1.9rem;
 
-                width: 80%;
+                  width: 80%;
+                }
               }
             }
           }
