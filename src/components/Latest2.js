@@ -8,13 +8,9 @@ function Latest2() {
     if (i > 15 && i < 20) {
       return (
         <div key={i} className="latest-article">
-          <div>
+          <div className="latest-article-img">
             <a href={item.url} target="_blank">
-              <img
-                alt="tech"
-                className="latest-article-img"
-                src={item.urlToImage}
-              />
+              <img alt="tech" src={item.urlToImage} />
             </a>
           </div>
           <div className="latest-article-text">
