@@ -12,11 +12,15 @@
     list-style: none;
 
     li {
-      font-size: 18px;
+      font-size: 1.8rem;
       margin: 0 20px;
       color: #a2a2a2;
       letter-spacing: 2px;
       cursor: pointer;
+      @include mobile570 {
+        font-size: 1.4rem;
+        margin: 0 10px;
+      }
     }
   }
 }

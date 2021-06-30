@@ -6,7 +6,7 @@ function Quicknews() {
       <div className="quicknews-heading">
         <div className="quicknews-heading-wrapper">
           <h2>
-            QUICK NEWS<span>//</span>
+            quick news<span>//</span>
           </h2>
         </div>
       </div>

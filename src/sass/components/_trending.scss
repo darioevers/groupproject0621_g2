@@ -20,8 +20,10 @@
       h2 {
         color: white;
         padding-left: 40px;
+        font-size: 2rem;
         span {
           color: #69c008;
+          font-size: 2rem;
         }
       }
     }
@@ -65,9 +67,9 @@
       .trending-article-heading {
         /*  background-color: orchid; */
         position: relative;
-        top: 30px;
+        top: 40px;
         h3 {
-          font-size: 30px;
+          font-size: 3.5rem;
         }
       }
       .trending-author-date {
@@ -76,6 +78,7 @@
         span {
           position: relative;
           bottom: 5px;
+          font-size: 1.5rem;
         }
       }
       .trending-article-desc {
@@ -83,7 +86,7 @@
         /*  background-color: rgb(218, 112, 112); */
         bottom: 50px;
         p {
-          font-size: 20px;
+          font-size: 2rem;
           position: relative;
         }
       }
