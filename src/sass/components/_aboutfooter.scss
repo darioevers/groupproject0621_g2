@@ -21,12 +21,17 @@
     margin: 2.5rem 0rem 2.5rem 6rem;
     h4 {
       margin-bottom: 1rem;
+      font-size: 1.8rem;
+      font-weight: 400;
     }
-
+    h1 {
+        font-size: 2.4rem;
+    }
     p {
       margin-top: 1rem;
-      max-width: 25rem;
+      max-width: 30rem;
       color: rgb(180, 180, 180);
+      font-size: 1.6rem;
     }
   }
   .aboutFooter-right {
@@ -36,6 +41,12 @@
       color: white;
       text-align: right;
       margin-bottom: 1rem;
+      h4 {
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+      }
+      
     }
     .aboutFooter-right-bot {
       height: 100%;
@@ -43,6 +54,7 @@
         display: flex;
         height: 40%;
         margin-bottom: 2rem;
+        
         .aboutFooter-nondynamic-content {
           height: 100%;
           width: 23%;
