@@ -25,10 +25,6 @@ function App() {
       <Latest2 />
       <Spotlight />
       {/*  <Lastest /> */}
-<<<<<<< HEAD
-=======
-
->>>>>>> c1b00fc28589b6719f5f43d172edaa58dd384854
       <Secondblock />
       <Aboutfooter />
       <Mainfooter />
