@@ -15,9 +15,10 @@
     }
 
     li {
-      margin: 0 30px;
+      margin: 0 25px;
       color: #a2a2a2;
       letter-spacing: 1px;
+      font-size: 1rem;
       cursor: pointer;
       /* width: 100%; */
       /* background-color: orange; */
@@ -28,7 +29,6 @@
         max-width: 100%; */
         a {
           /*  color: orange; */
-          font-size: 3rem;
         }
       }
     }
@@ -36,7 +36,7 @@
 }
 .link {
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-decoration: none;
   &:hover {
     color: #c97803;
