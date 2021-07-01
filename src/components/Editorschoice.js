@@ -12,7 +12,7 @@ function Editorschoice() {
         <div className="editor-items">
           <div className="editor-item">
             <div className="editor-item-image">
-              <img src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_lossy/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb658ff68-716a-407f-8d01-44d51fb752a6_500x281.gif"></img>
+              <img src="https://giffiles.alphacoders.com/209/209661.gif"></img>
             </div>
             <div className="editor-item-heading">
               <a
