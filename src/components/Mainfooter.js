@@ -38,12 +38,35 @@ export default function Aboutfooter({ menuOpen, setMenuOpen }) {
       <div class="mainFooter-mid">
         <div className={"menuFooter " + (menuOpen && "active")}>
           <ul>
-            <li onClick={() => setMenuOpen(false)}>Link1</li>
-            <li onClick={() => setMenuOpen(false)}>Link2</li>
-            <li onClick={() => setMenuOpen(false)}>Link3</li>
-            <li onClick={() => setMenuOpen(false)}>Link4</li>
-            <li onClick={() => setMenuOpen(false)}>Link5</li>
-            <li onClick={() => setMenuOpen(false)}>Link6</li>
+            <li>
+              <a className="link" href="#link1">
+                MORE IN TECH
+              </a>
+            </li>
+
+            <li>
+              <a className="link" href="#link2">
+                SPOTLIGHT
+              </a>
+            </li>
+
+            <li>
+              <a className="link" href="#link3">
+                LATEST IN TECH
+              </a>
+            </li>
+
+            <li>
+              <a className="link" href="#link4">
+                TRENDING
+              </a>
+            </li>
+
+            <li>
+              <a className="link" href="#link5">
+                QUICK NEWS
+              </a>
+            </li>
             {/*  {console.log()} */}
           </ul>
         </div>

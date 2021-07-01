@@ -30,6 +30,6 @@ function Highlight() {
       );
     }
   });
-  return <div className="highlight"> {items}</div>;
+  return <div className="highlight-wrapper"> {items}</div>;
 }
 export default Highlight;
