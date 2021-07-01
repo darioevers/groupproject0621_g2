@@ -124,7 +124,6 @@
 //   }
 // }
 
-
 .trending-wrapper {
   height: 70%;
   width: 100%;
@@ -148,7 +147,7 @@
       /* height: 90%; */
       left: 50px;
       /* top: 50px; */
-    } 
+    }
     .trending-heading {
       position: relative;
       height: 1rem;
@@ -167,7 +166,7 @@
           color: white;
           padding-left: 2rem;
 
-          a{
+          a {
             font-size: 2rem;
             font-weight: 300;
           }
@@ -217,7 +216,7 @@
         /*    background-color: orange; */
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         min-height: 30%;
         position: relative;
         top: 1rem;
@@ -253,7 +252,6 @@
           position: relative;
           /*    background-color: rgb(218, 112, 112); */
           bottom: 0;
-
           /* letter-spacing: 1px; */
           @include mobile990 {
             position: relative;
@@ -268,4 +266,8 @@
       }
     }
   }
+}
+
+a {
+  text-decoration: none;
 }
