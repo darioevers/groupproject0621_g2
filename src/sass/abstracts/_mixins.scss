@@ -1,7 +1,8 @@
-$width990: 1140px;
+$width990: 990px;
 $width720: 720px;
 $width570: 570px;
 $width1200: 1200px;
+$width1800: 1800px;
 @mixin mobile990 {
   @media (max-width: #{$width990}) {
     @content;
@@ -22,6 +23,12 @@ $width1200: 1200px;
 
 @mixin mobile1200 {
   @media (max-width: #{$width1200}) {
+    @content;
+  }
+}
+
+@mixin mobile1800 {
+  @media (max-width: #{$width1800}) {
     @content;
   }
 }

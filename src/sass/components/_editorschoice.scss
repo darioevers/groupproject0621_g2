@@ -10,8 +10,11 @@
     left: 9.6rem;
     top: 50px;
     height: 100px;
-    /* background-color: blue; */
+
     width: 50%;
+    @include mobile1800 {
+      left: 8rem;
+    }
     @include mobile990 {
       left: 50px;
     }
@@ -34,8 +37,11 @@
     /* background-color: yellowgreen; */
     display: flex;
     justify-content: center;
+    /* @include mobile1800 {
+      background-color: red;
+    } */
     @include mobile990 {
-      height: 80%;
+      /* height: 80%; */
     }
     .editor-items {
       /* height: auto; */
@@ -45,7 +51,9 @@
       flex-direction: row;
       justify-content: space-between;
       /* background-color: rgb(50, 78, 205); */
-
+      /*  @include mobile1800 {
+        background-color: red;
+      } */
       @include mobile990 {
         width: 50%;
       }
@@ -60,12 +68,23 @@
         justify-content: space-between;
         max-width: 22%;
         min-width: 350px;
-        /* min-width: 250px; */
-        /* flex-grow: 1; */
+        position: relative;
         flex-wrap: wrap;
+        @include mobile1800 {
+          /* border: 5px solid red; */
+          min-width: 40%;
+          margin-bottom: 5px;
+        }
+        @include mobile1200 {
+          /* border: 5px solid rgb(38, 0, 255); */
+          min-width: 50%;
+          margin-bottom: 5px;
+        }
         @include mobile990 {
-          max-width: 100%;
-          min-width: 100%;
+          /* border: 5px solid rgb(81, 255, 0); */
+          min-width: 45%;
+          /*  max-height: 100%; */
+          margin-bottom: 5px;
         }
         @include mobile720 {
           max-width: 100%;
@@ -94,76 +113,120 @@
           }
         }
         .editor-item-heading {
+          /* min-height: auto; */
+          @include mobile1200 {
+            /* border: 5px solid rgb(38, 0, 255); */
+            /* min-width: 50%;
+            margin-bottom: 5px; */
+          }
+          @include mobile1800 {
+            /* background-color: blue; */
+            /* height: auto; */
+            /* height: 200px; */
+          }
+          @include mobile990 {
+            /* height: 20%; */
+            position: relative;
+            /*  top: 50px; */
+          }
           position: relative;
-          h3 {
-            cursor: pointer;
-            font-size: 2.5rem;
-            padding-top: 10px;
-            @include mobile570 {
-              font-size: 2rem;
-              /*  background-color: chartreuse; */
-              position: relative;
-              top: 5px;
+          a {
+            text-decoration: none;
+            color: #3e74ee;
+            &:visited {
+              color: #3e74ee;
             }
-            @include mobile720 {
-              position: relative;
-              top: 5px;
-            }
-            @include mobile990 {
+            h3 {
+              cursor: pointer;
               font-size: 2.5rem;
-              padding-top: 0;
-              position: relative;
-              top: 0;
-            }
-            @include mobile1200 {
-              font-size: 3rem;
-              position: relative;
-              bottom: 40px;
+              /*  padding-top: 10px; */
+              /*  background-color: chartreuse; */
+              @include mobile570 {
+                font-size: 2rem;
+                /* border: 3px solid orange; */
+                position: relative;
+                top: 5px;
+              }
+              @include mobile720 {
+                font-size: 2rem;
+                padding-top: 0;
+                /* padding-bottom: 20px; */
+                position: relative;
+                /* bottom: 20px; */
+                /* top: 0px; */
+              }
+              @include mobile990 {
+                /* background-color: red; */
+                /*  border: 3px solid rgb(53, 37, 7); */
+                padding-top: 0;
+                /* padding-bottom: 20px; */
+                position: relative;
+                top: 0px;
+                /* bottom: 20px; */
+                /*  background-color: red; */
+              }
+              @include mobile1200 {
+                font-size: 2.5rem;
+                padding-top: 0;
+                /* padding-bottom: 20px; */
+                position: relative;
+                bottom: 20px;
+                /*  background-color: red; */
+              }
             }
           }
         }
         .author-date {
           position: relative;
-          padding-bottom: 50px;
+          /* padding-bottom: 50px; */
+          @include mobile720 {
+            /* background-color: rgb(0, 89, 255); */
+            /* position: relative;
+            bottom: 5px; */
+          }
+          @include mobile990 {
+            /* background-color: orange;
+            min-height: 100%; */
+            display: none;
+          }
+          @include mobile1200 {
+          }
+          @include mobile1800 {
+            /* background-color: blue; */
+            padding-bottom: 0;
+            bottom: 10px;
+          }
           @include mobile570 {
             /* background-color: rgb(0, 89, 255); */
             position: relative;
             bottom: 5px;
-            /*  padding-bottom: 0; */
-            /* bottom: 10px; */
-          }
-          @include mobile720 {
-            position: relative;
-            bottom: 5px;
-          }
-          @include mobile990 {
-            padding-bottom: 0;
-            position: relative;
-            top: 15px;
           }
           span {
-            font-size: 1.4rem;
+            bottom: 10px;
+            font-size: 2rem;
             cursor: pointer;
             position: relative;
             @include mobile1200 {
               font-size: 1.8rem;
               position: relative;
-              bottom: 35px;
-              background-color: rgb(111, 151, 65);
+              bottom: 0px;
+              /*  background-color: rgb(111, 151, 65); */
             }
             @include mobile990 {
-              background-color: cornflowerblue;
-              font-size: 1.5rem;
+              /* background-color: cornflowerblue; */
+              font-size: 1.2rem;
+              position: relative;
+              top: 5px;
             }
 
             @include mobile720 {
               position: relative;
-              bottom: 50px;
-              background-color: crimson;
-              font-size: 1.3rem;
+              /*  bottom: 50px; */
+              /* background-color: crimson; */
+              font-size: 2rem;
             }
             @include mobile570 {
-              background-color: chocolate;
+              /*  background-color: chocolate; */
               font-size: 1rem;
               position: relative;
               top: 0;

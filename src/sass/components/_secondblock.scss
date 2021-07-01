@@ -14,21 +14,26 @@
     /*    background-color: yellowgreen; */
     height: 100%;
     position: relative;
+    a {
+      font-size: 2.5rem;
+    }
     @include mobile990 {
       width: 100%;
     }
     .moreintech-heading {
       height: 125px;
-      width: 85%;
+      width: 90%;
       margin: 0 auto;
-
       /* background-color: hotpink; */
       position: relative;
       border-bottom: 1px solid #c0c0c0;
       h2 {
         position: relative;
-        top: 70px;
+        top: 7rem;
         font-size: 2.5rem;
+        a {
+          font-size: 2.5rem;
+        }
 
         span {
           color: #43d001;
@@ -38,25 +43,23 @@
       }
     }
     .moreintech-articles-container {
-      /* background-color: blue; */
+      // border: red 1px solid;
+      padding-right: 1.5rem;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       height: 800px;
-      width: 85%;
+      width: 95%;
       position: relative;
-      top: 20px;
-      left: 96px;
+      margin: 0 auto;
       .moreintech-article {
-        height: 22%;
         width: 100%;
-        /* border: 1px solid red; */
         display: flex;
         flex-direction: row;
 
         .moreintech-article-img {
-          min-width: 30%;
-          max-width: 30%;
+          min-width: 33rem;
+          max-width: 33rem;
           height: 100%;
           display: flex;
           justify-content: center;
@@ -74,10 +77,9 @@
         }
         .moreintech-article-text {
           /* background-color: rgb(219, 186, 250); */
-          padding-left: 30px;
+          padding-left: 3rem;
           .moreintech-article-heading {
             width: 95%;
-            height: 40%;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -86,19 +88,23 @@
               width: 80%;
               /* overflow: hidden; */
             }
-            h2 {
+            h3 {
               font-size: 2rem;
+              color: black;
+              text-decoration: none;
               @include mobile990 {
                 font-size: 1.9rem;
 
-                width: 80%;
+                  width: 80%;
+                }
               }
             }
           }
           .author-date {
-            margin-top: 20px;
+            margin-top: 1rem;
             span {
               font-size: 1.3rem;
+              font-weight: 600;
             }
           }
           .moreintech-article-desc {
@@ -123,6 +129,14 @@
       }
     }
   }
+  .divider {
+    width: 1px;
+    height: 85.5%;
+    background-color: #c0c0c0;
+    position: relative;
+    right: 50px;
+    top: 75px;
+  }
   .quicknews-newsletter {
     display: flex;
     flex-direction: column;
@@ -133,4 +147,3 @@
       display: none;
     }
   }
-}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./sass/main.scss";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -19,7 +20,7 @@ function App() {
 
   useEffect(() => {
     fetch(
-      "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=976c618d659c44fd825f99e88a65267e"
+      "https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=976c618d659c44fd825f99e88a65267e "
     )
       .then((response) => response.json())
       .then((data) => setNewArr(data.articles));
@@ -29,6 +30,7 @@ function App() {
     <StoreContext.Provider value={{ newArr, setStore }}>
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+
       <Highlight />
       <Editorschoice />
       <Cta />
@@ -42,3 +44,4 @@ function App() {
   );
 }
 export default App;
+//https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=976c618d659c44fd825f99e88a65267e

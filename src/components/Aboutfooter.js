@@ -32,7 +32,7 @@ export default function Aboutfooter() {
               <img src="https://thumbs.gfycat.com/AccomplishedSoggyBlackbird-size_restricted.gif"></img>
             </div>
             <div class="aboutFooter-nondynamic-content rightcontent">
-              <img src="https://thumbs.gfycat.com/AccomplishedSoggyBlackbird-size_restricted.gif"></img>
+              <img src="https://lh6.googleusercontent.com/proxy/FOzYtX-jc1HAda1lek_cw6G5jabe3ApZFywHfGbltF1Znr4Q8rHyxnvje-J2IH2oRZmnBQd-SE-Gfvcf8kjQCJN7osMPI_YFT1yCirSVYIkfZIKAKZen7nGv0Teu5CWPHVcvUyaoVdM6=s0-d"></img>
             </div>
           </div>
           <div class="aboutFooter-right-bot-innerbot">

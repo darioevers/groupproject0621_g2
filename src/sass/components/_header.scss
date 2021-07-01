@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /*  position: fixed; */
   @include mobile570 {
     min-width: 300px;
   }
@@ -69,7 +70,7 @@
     }
     h1 {
       font-size: 4rem;
-      color: #d8d8d8;
+      color: #c97803;
       @include mobile990 {
         font-size: 3rem;
       }

@@ -1,18 +1,19 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Store, StoreContext } from "../context";
-
+ 
 function Quicknews() {
   const contextObj = useContext(StoreContext);
 
   console.log(contextObj.newArr);
   const items = contextObj.newArr.map((item, i) => {
     if (i > 16 && i < 18) {
+      const dateArr = item.publishedAt.split("").slice(0, 10).join("");
       return (
         <div className="quicknews">
           <div className="quicknews-heading">
             <div className="quicknews-heading-wrapper">
               <h2>
-                quick news<span>//</span>
+                <a id="link5">QUICK NEWS </a> <span> //</span>
               </h2>
             </div>
           </div>
@@ -24,12 +25,14 @@ function Quicknews() {
             </div>
             <div className="quicknews-article-text">
               <div className="quicknews-article-heading">
-                <h4>{item.title}</h4>
+                <a href={item.url} target="_blank">
+                  <h4>{item.title}</h4>
+                </a>
               </div>
               <div className="quicknews-author-date">
                 <span>{item.author}</span>
                 <span> </span>
-                <span>{item.publishedAt}</span>
+                <span>{dateArr}</span>
               </div>
               <div className="quicknews-article-desc">
                 <p>{item.content}</p>
@@ -40,7 +43,7 @@ function Quicknews() {
       );
     }
   });
-  return <div className="quicknews">{items}</div>;
+  return <div className="quicknews-wrapper">{items}</div>;
 }
 
 export default Quicknews;

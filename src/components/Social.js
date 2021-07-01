@@ -1,19 +1,24 @@
 import React from "react";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 
 
+=======
+ 
+>>>>>>> fabcc649add614b3720884d2b4523d082e9df053
 function Social() {
   return (
     <div className="social">
       <div className="social-heading">
         <div className="social-heading-wrapper">
           <h2>
-            socialize with us<span>//</span>
+            SOCIALIZE WITH US <span> //</span>
           </h2>
         </div>
       </div>
       <div className="social-buttons">
         <div className="social-buttons-left">
+<<<<<<< HEAD
           <button className="facebook-btn"><Link to="#" target="blank">Facebook</Link></button>
           <button className="pinterest-btn"><Link to="#" target="blank">Pinteres/</Link>t</button>
           <button className="youtube-btn"><Link to="#" target="blank">Youtube</Link></button>
@@ -22,6 +27,40 @@ function Social() {
           <button className="twitter-btn"><Link to="#" target="blank">Twitter</Link></button>
           <button className="instagram-btn"><Link to="#" target="blank">Instagram</Link></button>
           <button className="vimeo-btn"><Link to="#" target="blank">Vimeo</Link></button>
+=======
+          <button className="facebook-btn">
+            <a href="https://www.facebook.com/" target="_blank">
+              Facebook
+            </a>
+          </button>
+          <button className="pinterest-btn">
+            <a href="https://www.Pinterest.com/" target="_blank">
+              Pinterest
+            </a>
+          </button>
+          <button className="youtube-btn">
+            <a href="https://www.Youtube.com/" target="_blank">
+              Youtube
+            </a>
+          </button>
+        </div>
+        <div className="social-buttons-right">
+          <button className="twitter-btn">
+            <a href="https://www.Twitter.com/" target="_blank">
+              Twitter
+            </a>
+          </button>
+          <button className="instagram-btn">
+            <a href="https://www.Instagram.com/" target="_blank">
+              Instagram
+            </a>
+          </button>
+          <button className="vimeo-btn">
+            <a href="https://www.Vimeo.com/" target="_blank">
+              Vimeo
+            </a>
+          </button>
+>>>>>>> fabcc649add614b3720884d2b4523d082e9df053
         </div>
       </div>
     </div>
