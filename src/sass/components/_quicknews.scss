@@ -81,6 +81,7 @@
           justify-content: center;
           align-items: center;
           margin-top: 5rem;
+          text-decoration: none;
           img {
             flex-shrink: 0;
             object-fit: cover;
@@ -106,7 +107,7 @@
             top: 0;
           }
           h4 {
-            font-size: 2.2rem;
+            font-size: 2.6rem;
             letter-spacing: 1px;
 
             /* border: 5px solid greenyellow; */
@@ -123,7 +124,7 @@
         span {
           position: relative;
           /* top: 10px; */
-          font-size: 1.5rem;
+          font-size: 1.9rem;
         }
       }
       .quicknews-article-desc {
@@ -139,11 +140,15 @@
         p {
           position: relative;
           top: 1rem;
-          font-size: 1.7rem;
+          font-size: 2rem;
         }
       }
     }
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 .quicknews-article-heading a {
