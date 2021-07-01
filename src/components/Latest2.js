@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-import { Router } from "@material-ui/icons";
-import React from "react";
-
-=======
 import React, { useState, useEffect, useContext } from "react";
->>>>>>> 4baec77cbf6a8f9a5a422fd8eb828fdb9e551e8f
 import Social from "./Social";
 import Trending from "./Trending";
 import { StoreContext } from "../context";

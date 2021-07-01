@@ -2,11 +2,11 @@ import { Theaters } from "@material-ui/icons";
 import React, {useState, useEffect, useContext} from "react";
 import { ThemeConsumer } from "react-bootstrap/esm/ThemeProvider";
 import { Link } from "react-router-dom";
-import {Store, storContext} from "../context";
+import {Store, StoreContext} from "../context";
 
 
 function Navbar({ menuOpen, setMenuOpen }) {
-  const contextObj = useContext(storContext);
+  const contextObj = useContext(StoreContext);
   const [newArr, setNewArr] = useState([]);
   const [state, setstate] = useState(Store);
 

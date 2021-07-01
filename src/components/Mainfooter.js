@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useContext} from "react";
-import {Store, storContext} from "../context";
+import {Store, StoreContext} from "../context";
 import { Link } from "react-router-dom";
 
 
@@ -12,7 +12,7 @@ import {
   FaRegUserCircle,
 } from "react-icons/fa";
 export default function Aboutfooter({ menuOpen, setMenuOpen }) {
-  const contextObj = useContext(storContext);
+  const contextObj = useContext(StoreContext);
   const [newArr, setNewArr] = useState([]);
   const [state, setstate] = useState(Store);
   useEffect(() => {
@@ -57,31 +57,6 @@ return (
     <div class="mainFooter">
       <div class="mainFooter-top">
         <div className="iconsWrapper">
-<<<<<<< HEAD
-        <ul className="iconsList">
-          <li className="listItem">
-            <Link to="#" target="blank">
-              <FaFacebook />
-            </Link>
-          </li>
-          <li className="listItem">
-            <Link to="#" target="blank">
-              <FaTwitter />
-            </Link>
-          </li>
-          <li className="listItem">
-            <Link to="#" target="blank">
-              <FaInstagram />
-            </Link>
-          </li>
-          <li className="listItem">
-            <Link to="#" target="blank">
-              <FaVimeoV />
-            </Link>
-          </li>
-        </ul>
-      </div>
-=======
           <ul className="iconsList">
             <li className="listItem">
               <a href="#">
@@ -104,19 +79,10 @@ return (
               </a>
             </li>
           </ul>
->>>>>>> 4baec77cbf6a8f9a5a422fd8eb828fdb9e551e8f
         </div>
       </div>
       <div class="mainFooter-mid">
         <div className={"menuFooter " + (menuOpen && "active")}>
-<<<<<<< HEAD
-          {footerlink}
-      
-    </div>
-        </div>
-        <div class="mainFooter-bot">
-            <p>© 2021  dci project</p>
-=======
           <ul>
             <li onClick={() => setMenuOpen(false)}>Link1</li>
             <li onClick={() => setMenuOpen(false)}>Link2</li>
@@ -126,7 +92,6 @@ return (
             <li onClick={() => setMenuOpen(false)}>Link6</li>
             {/*  {console.log()} */}
           </ul>
->>>>>>> 4baec77cbf6a8f9a5a422fd8eb828fdb9e551e8f
         </div>
       </div>
       <div class="mainFooter-bot">

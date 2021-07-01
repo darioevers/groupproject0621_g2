@@ -20,10 +20,6 @@ export default function Aboutfooter() {
         <div class="aboutFooter-right-top">
           <h4>OUR PICKS</h4>
         </div>
-<<<<<<< HEAD
-        <div class="aboutFooter-right">
-            
-=======
         <div class="aboutFooter-right-bot">
           <div class="aboutFooter-right-bot-innertop">
             <div class="aboutFooter-nondynamic-content leftcontent">
@@ -53,7 +49,6 @@ export default function Aboutfooter() {
               <img src="https://thumbs.gfycat.com/AccomplishedSoggyBlackbird-size_restricted.gif"></img>
             </div>
           </div>
->>>>>>> 4baec77cbf6a8f9a5a422fd8eb828fdb9e551e8f
         </div>
       </div>
     </div>

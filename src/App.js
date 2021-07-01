@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-import React, { useState, useContext } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
-=======
 import React, { useState, useEffect, useContext } from "react";
->>>>>>> 4baec77cbf6a8f9a5a422fd8eb828fdb9e551e8f
 import "./sass/main.scss";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -21,16 +15,6 @@ function App() {
   const [store, setStore] = useState(Store);
   const contextObj = useContext(StoreContext);
   const [menuOpen, setMenuOpen] = useState(false);
-<<<<<<< HEAD
-
-  return (
-    <storContext.Provider value={store}>
-    <Router>
-      <Route path="./header" exact component={Header} />
-      <Route path="./navbar" exact component ={()=><
-        Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/> }/>
-      
-=======
   const [newArr, setNewArr] = useState([]);
 
   useEffect(() => {
@@ -45,7 +29,6 @@ function App() {
     <StoreContext.Provider value={{ newArr, setStore }}>
       <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
->>>>>>> 4baec77cbf6a8f9a5a422fd8eb828fdb9e551e8f
       <Highlight />
       <Editorschoice />
       <Cta />
@@ -54,15 +37,8 @@ function App() {
       {/* <Lastest /> */}
       <Secondblock />
       <Aboutfooter />
-<<<<<<< HEAD
-      <Route path="./mainfooter" exact component ={()=><
-        Mainfooter menuOpen={menuOpen} setMenuOpen={setMenuOpen}  /> }/>
-      </Router> 
-    </storContext.Provider>
-=======
       <Mainfooter />
     </StoreContext.Provider>
->>>>>>> 4baec77cbf6a8f9a5a422fd8eb828fdb9e551e8f
   );
 }
 export default App;
