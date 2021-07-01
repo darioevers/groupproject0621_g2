@@ -70,7 +70,7 @@ function Editorschoice() {
                 href="https://time.com/5934393/facebook-oversight-board-big-tech-future/"
                 target="_blank"
               >
-                <h3>Facebook’s New Oversight Board</h3>
+                <h3>Facebook’s New Oversight</h3>
               </a>
             </div>
             <div className="author-date">
