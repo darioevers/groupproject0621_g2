@@ -21,7 +21,7 @@
       /* height: 90%; */
       left: 50px;
       /* top: 50px; */
-    } 
+    }
     .quicknews-heading {
       position: relative;
       height: 1rem;
@@ -40,7 +40,7 @@
           color: white;
           padding-left: 2rem;
 
-          a{
+          a {
             font-size: 2rem;
             font-weight: 300;
           }
@@ -81,6 +81,7 @@
           justify-content: center;
           align-items: center;
           margin-top: 5rem;
+          text-decoration: none;
           img {
             flex-shrink: 0;
             object-fit: cover;
@@ -106,42 +107,50 @@
             top: 0;
           }
           h4 {
-            font-size: 2.2rem;
+            font-size: 2.6rem;
             letter-spacing: 1px;
 
-              /* border: 5px solid greenyellow; */
-              @include mobile990 {
-                position: relative;
-                bottom: 70px;
-              }
+            /* border: 5px solid greenyellow; */
+            @include mobile990 {
+              position: relative;
+              bottom: 70px;
             }
           }
         }
-        .quicknews-author-date {
-          /*   background-color: rgb(112, 202, 218); */
+      }
+      .quicknews-author-date {
+        /*   background-color: rgb(112, 202, 218); */
+        position: relative;
+        span {
           position: relative;
-          span {
-            position: relative;
-            /* top: 10px; */
-            font-size: 1.5rem;
-          }
+          /* top: 10px; */
+          font-size: 1.9rem;
         }
-        .quicknews-article-desc {
-          position: relative;
-          /*    background-color: rgb(218, 112, 112); */
-          bottom: 0;
+      }
+      .quicknews-article-desc {
+        position: relative;
+        /*    background-color: rgb(218, 112, 112); */
+        bottom: 0;
 
-          /* letter-spacing: 1px; */
-          @include mobile990 {
-            position: relative;
-            bottom: 80px;
-          }
-          p {
-            position: relative;
-            top: 1rem;
-            font-size: 1.7rem;
-          }
+        /* letter-spacing: 1px; */
+        @include mobile990 {
+          position: relative;
+          bottom: 80px;
+        }
+        p {
+          position: relative;
+          top: 1rem;
+          font-size: 2rem;
         }
       }
     }
   }
+}
+
+a {
+  text-decoration: none;
+}
+
+.quicknews-article-heading a {
+  text-decoration: none;
+}

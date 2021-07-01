@@ -43,55 +43,83 @@
         }
       }
 
-.cta-btn{
-  height: 60px;
-  width: 610px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+      .cta-btn {
+        height: 60px;
+        width: 610px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        @include mobile990 {
+          width: 70%;
+        }
+        @include mobile720 {
+          width: 50%;
+        }
+        .field {
+          height: 100%;
+          width: 100%;
+          position: relative;
+          transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          /* background-color: blue; */
+          display: flex;
+          justify-content: flex-start;
+          @include mobile990 {
+            width: 100%;
+          }
+          @include mobile720 {
+            width: 100%;
+          }
+          input {
+            height: 100%;
+            width: 100%;
+            border: 2px solid #0ead69;
+            border-radius: 5px;
+            padding: 0 130px 0 15px;
+            font-size: 2rem;
+            outline: none;
+            @include mobile990 {
+              width: 100%;
+            }
+            @include mobile720 {
+              width: 100%;
+            }
+          }
+          input::placeholder {
+            color: #999;
+            font-size: 18px;
+          }
+        }
 
-.field{
-  height: 100%;
-  width: 100%;
-  position: relative;
-  transition: 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
-
-  input{
-    height: 100%;
-    width: 100%;
-    border: 2px solid #0EAD69;
-    border-radius: 5px;
-    padding: 0 130px 0 15px;
-    font-size: 2rem;
-    outline: none;
-  }
-  input::placeholder{
-    color: #999;
-    font-size: 18px;
-  }
-}
-
-.field .btn-2{
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-  font-size: 1.6rem;
-  color: #fff;
-  line-height: 40px;
-  background: #0EAD69;
-  height: 40px;
-  width: 100px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.field .btn-2:active{
-  transform: translateY(-50%) scale(0.9);
-}
-
+        .field .btn-2 {
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          transform: translateY(-50%);
+          font-size: 1.2rem;
+          color: #fff;
+          line-height: 40px;
+          background: #0ead69;
+          height: 40px;
+          width: 100px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          @include mobile990 {
+            position: relative;
+            right: 80px;
+            width: 100px;
+          }
+          @include mobile720 {
+            position: relative;
+            right: 60px;
+            width: 100px;
+          }
+        }
+        .field .btn-2:active {
+          transform: translateY(-50%) scale(0.9);
+        }
       }
     }
   }

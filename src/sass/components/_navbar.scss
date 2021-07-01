@@ -15,20 +15,21 @@
     }
 
     li {
-      margin: 0 30px;
+      margin: 0 25px;
       color: #a2a2a2;
       letter-spacing: 1px;
+      font-size: 1rem;
       cursor: pointer;
       /* width: 100%; */
       /* background-color: orange; */
       @include mobile570 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin: 0 10px;
         /* min-width: 100%;
         max-width: 100%; */
         a {
           /*  color: orange; */
-          font-size: 3rem;
+          font-size: 1rem;
         }
       }
     }
@@ -36,9 +37,15 @@
 }
 .link {
   color: white;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-decoration: none;
   &:hover {
     color: #c97803;
+  }
+  @include mobile570 {
+    font-size: 1rem;
+  }
+  @include mobile720 {
+    font-size: 1.1rem;
   }
 }

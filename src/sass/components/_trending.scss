@@ -1,130 +1,3 @@
-// .trending {
-//   height: 70%;
-//   width: 85%;
-//   /* border: 5px solid rgb(72, 255, 0); */
-//   /* background-color: hotpink; */
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-around;
-//   @include mobile990 {
-//     width: 90vw;
-//     /* height: 500px; */
-//     position: relative;
-//     /* height: 90%; */
-//     left: 50px;
-//     /* top: 50px; */
-//   }
-//   .trending-heading {
-//     position: relative;
-//     height: 120px;
-//     .trending-heading-wrapper {
-//       position: relative;
-//       top: 70px;
-//       background-color: black;
-//       height: 45px;
-//       display: flex;
-//       align-items: center;
-//       @include mobile990 {
-//         top: 30px;
-//       }
-//       h2 {
-//         color: white;
-//         padding-left: 40px;
-//         font-size: 2rem;
-
-//         span {
-//           color: #69c008;
-//           font-size: 2rem;
-//         }
-//       }
-//     }
-//   }
-//   .trending-article-container {
-//     width: 100%;
-//     height: 100%;
-//     /*  border: 5px solid orange; */
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-evenly;
-
-//     .trending-article-img {
-//       min-height: 60%;
-//       /* border: 5px solid black; */
-//       position: relative;
-//       min-width: 100%;
-//       @include mobile990 {
-//         bottom: 100px;
-//       }
-
-//       a {
-//         min-width: 100%;
-//         position: relative;
-//         /* top: 10px; */
-//         height: 80%;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         margin-top: 50px;
-//         img {
-//           flex-shrink: 0;
-//           object-fit: cover;
-//           width: 100%;
-//           height: 100%;
-//         }
-//       }
-//     }
-//     .trending-article-text {
-//       /*  background-color: orange; */
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-between;
-//       height: 100%;
-//       position: relative;
-//       .trending-article-heading {
-//         /* background-color: orchid; */
-//         position: relative;
-//         top: 10px;
-//         width: 100%;
-//         @include mobile990 {
-//           top: 0;
-//         }
-//         h3 {
-//           font-size: 3rem;
-//           letter-spacing: 1px;
-//           /*  border: 5px solid greenyellow; */
-//           @include mobile990 {
-//             position: relative;
-//             bottom: 70px;
-//           }
-//         }
-//       }
-//       .trending-author-date {
-//         /* background-color: rgb(112, 202, 218); */
-//         position: relative;
-//         span {
-//           position: relative;
-//           bottom: 0;
-//           font-size: 1.5rem;
-//         }
-//       }
-//       .trending-article-desc {
-//         position: relative;
-//         /* background-color: rgb(218, 112, 112); */
-//         bottom: 30px;
-//         /* letter-spacing: 1px; */
-//         @include mobile990 {
-//           position: relative;
-//           bottom: 80px;
-//         }
-//         p {
-//           font-size: 2rem;
-//         }
-//       }
-//     }
-//   }
-// }
-
-
 .trending-wrapper {
   height: 70%;
   width: 100%;
@@ -148,7 +21,7 @@
       /* height: 90%; */
       left: 50px;
       /* top: 50px; */
-    } 
+    }
     .trending-heading {
       position: relative;
       height: 1rem;
@@ -167,7 +40,7 @@
           color: white;
           padding-left: 2rem;
 
-          a{
+          a {
             font-size: 2rem;
             font-weight: 300;
           }
@@ -217,7 +90,7 @@
         /*    background-color: orange; */
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         min-height: 30%;
         position: relative;
         top: 1rem;
@@ -230,7 +103,7 @@
             top: 0;
           }
           h3 {
-            font-size: 2.2rem;
+            font-size: 2.9rem;
             letter-spacing: 1px;
 
             /* border: 5px solid greenyellow; */
@@ -246,14 +119,13 @@
           span {
             position: relative;
             /* top: 10px; */
-            font-size: 1.5rem;
+            font-size: 1.9rem;
           }
         }
         .trending-article-desc {
           position: relative;
           /*    background-color: rgb(218, 112, 112); */
           bottom: 0;
-
           /* letter-spacing: 1px; */
           @include mobile990 {
             position: relative;
@@ -262,10 +134,14 @@
           p {
             position: relative;
             top: 1rem;
-            font-size: 1.7rem;
+            font-size: 2rem;
           }
         }
       }
     }
   }
+}
+
+a {
+  text-decoration: none;
 }

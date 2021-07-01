@@ -17,7 +17,7 @@ function Latest2() {
             </a>
           </div>
           <div className="latest-article-text">
-            <div className="latest-article-heading">
+          <div className="latest-article-heading">
               <a href={item.url} target="_blank">
                 <h3>{item.title}</h3>
               </a>
