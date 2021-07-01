@@ -14,40 +14,24 @@ export default function Header() {
       <div className="iconsWrapper">
         <ul className="iconsList">
           <li className="listItem">
-<<<<<<< HEAD
-            <Link to="#" target="blank">
-=======
             <a href="https://www.facebook.com/" target="_blank">
->>>>>>> fabcc649add614b3720884d2b4523d082e9df053
               <FaFacebook />
-            </Link>
+            </a>
           </li>
           <li className="listItem">
-<<<<<<< HEAD
-            <Link to="#" target="blank">
-=======
             <a href="https://www.twitter.com/" target="_blank">
->>>>>>> fabcc649add614b3720884d2b4523d082e9df053
               <FaTwitter />
-            </Link>
+            </a>
           </li>
           <li className="listItem">
-<<<<<<< HEAD
-            <Link to="#" target="blank">
-=======
             <a href="https://www.instagram.com/" target="_blank">
->>>>>>> fabcc649add614b3720884d2b4523d082e9df053
               <FaInstagram />
-            </Link>
+            </a>
           </li>
           <li className="listItem">
-<<<<<<< HEAD
-            <Link to="#" target="blank">
-=======
             <a href="https://www.vimeo.com/" target="_blank">
->>>>>>> fabcc649add614b3720884d2b4523d082e9df053
               <FaVimeoV />
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import Social from "./Social";
 import Trending from "./Trending";
 import { StoreContext } from "../context";

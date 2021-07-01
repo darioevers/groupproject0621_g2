@@ -44,4 +44,3 @@ function App() {
   );
 }
 export default App;
-//https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=976c618d659c44fd825f99e88a65267e

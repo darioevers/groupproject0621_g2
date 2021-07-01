@@ -40,13 +40,8 @@ function Editorschoice() {
               </a>
             </div>
             <div className="author-date">
-<<<<<<< HEAD
-              <span>AUTHOR</span> <span> / </span>
-              <span>DATE</span>
-=======
               <span>Aubrey Bergauer</span> <span> / </span>
               <span>2021-05-20</span>{" "}
->>>>>>> fabcc649add614b3720884d2b4523d082e9df053
             </div>
           </div>
           <div className="editor-item">

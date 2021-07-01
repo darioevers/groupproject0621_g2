@@ -1,11 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
-import { Link } from "react-router-dom";
-
-
-=======
  
->>>>>>> fabcc649add614b3720884d2b4523d082e9df053
 function Social() {
   return (
     <div className="social">
@@ -18,16 +12,6 @@ function Social() {
       </div>
       <div className="social-buttons">
         <div className="social-buttons-left">
-<<<<<<< HEAD
-          <button className="facebook-btn"><Link to="#" target="blank">Facebook</Link></button>
-          <button className="pinterest-btn"><Link to="#" target="blank">Pinteres/</Link>t</button>
-          <button className="youtube-btn"><Link to="#" target="blank">Youtube</Link></button>
-        </div>
-        <div className="social-buttons-right">
-          <button className="twitter-btn"><Link to="#" target="blank">Twitter</Link></button>
-          <button className="instagram-btn"><Link to="#" target="blank">Instagram</Link></button>
-          <button className="vimeo-btn"><Link to="#" target="blank">Vimeo</Link></button>
-=======
           <button className="facebook-btn">
             <a href="https://www.facebook.com/" target="_blank">
               Facebook
@@ -60,7 +44,6 @@ function Social() {
               Vimeo
             </a>
           </button>
->>>>>>> fabcc649add614b3720884d2b4523d082e9df053
         </div>
       </div>
     </div>
